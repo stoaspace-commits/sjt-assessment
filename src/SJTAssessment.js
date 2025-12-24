@@ -80,7 +80,7 @@ const SJTAssessment = () => {
     const endTimeStr = new Date().toLocaleTimeString();
 
     // 1. GANTI URL INI dengan URL Web App dari New Deployment Google Script Anda
-    const WEB_APP_URL = "URL_WEB_APP_BARU_ANDA";
+    const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbylqATw9CO5P1shYrjuIqU3HoELNq1e5OQXsgHA8GddSHXw1-ppVfelvngfOJayyLXq/exec";
 
     // 2. Susun Query Parameters (Metode GET lebih stabil untuk Google Script)
     const params = new URLSearchParams({
