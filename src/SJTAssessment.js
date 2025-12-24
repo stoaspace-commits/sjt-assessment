@@ -9,17 +9,17 @@ const SJTAssessment = () => {
   const [answers, setAnswers] = useState({});
   const [isFinished, setIsFinished] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(5400); // 90 Menit
+  const [timeLeft, setTimeLeft] = useState(5400); 
   const timerRef = useRef(null);
 
-  // Kode Rahasia Parameter
+  // Inisial Parameter Rahasia
   const paramMap = {
-    customerService: 'DM-P1',
-    teamwork: 'DM-P2',
-    integrity: 'DM-P3',
-    stressManagement: 'DM-P4',
-    initiative: 'DM-P5',
-    accountability: 'DM-P6'
+    customerService: 'CSO',
+    teamwork: 'TMW',
+    integrity: 'INT',
+    stressManagement: 'STM',
+    initiative: 'INI',
+    accountability: 'ACC'
   };
 
   const allQuestions = Object.entries(sjtQuestionsData).flatMap(([dim, scenarios]) => 
@@ -54,8 +54,7 @@ const SJTAssessment = () => {
         if (userAns.best === q.correctBest) totalDimScore += 2;
         if (userAns.worst === q.correctWorst) totalDimScore += 1;
       });
-      // Skor per parameter (Maks 45 poin per dimensi)
-      scores[paramMap[dim]] = ((totalDimScore / 45) * 100).toFixed(1);
+      scores[paramMap[dim]] = ((totalDimScore / 30) * 100).toFixed(1); // Perbaikan pembagi sesuai total soal per dim
     });
     return scores;
   };
@@ -69,36 +68,33 @@ const SJTAssessment = () => {
     }, 2000);
   };
 
-  // --- VIEW: OPENING (SAMA DENGAN BIG FIVE) ---
   if (!isStarted) {
     return (
       <div className="main-wrapper">
         <div className="container animate-in">
           <div className="header-area">
             <img src={logo} alt="Logo" className="app-logo" />
-            <div className="badge">Internal Assessment</div>
+            <div className="badge">Oprec Stoa Gen-6</div>
           </div>
-          <div className="card intro-card">
+          <div className="card shadow-lg intro-card">
             <h1 className="text-center">Decision Making Test</h1>
-            <p className="description text-muted">
-              Tes ini dirancang untuk mengukur cara Anda mengambil keputusan dalam situasi kerja. 
-              Gunakan panduan berikut sebelum memulai:
+            <p className="description text-muted text-center">
+              Gunakan asumsi dan pengetahuanmu untuk memilih tindakan terbaik dan terburuk dalam setiap skenario.
             </p>
             <div className="instructions-list">
-              <div className="ins-item"><span>✅</span> Pilih <strong>Satu Tindakan Terbaik</strong> (Best) yang paling efektif menurut Anda.</div>
-              <div className="ins-item"><span>❌</span> Pilih <strong>Satu Tindakan Terburuk</strong> (Worst) yang paling dihindari.</div>
-              <div className="ins-item"><span>⏳</span> Anda memiliki waktu <strong>90 menit</strong> untuk menyelesaikan 90 skenario.</div>
-              <div className="ins-item"><span>💡</span> Tidak ada jawaban benar/salah secara mutlak, jawablah dengan jujur sesuai insting profesional Anda.</div>
+              <div className="ins-item"><span>✅</span> Pilih <strong>Satu Tindakan Terbaik</strong> (Best).</div>
+              <div className="ins-item"><span>❌</span> Pilih <strong>Satu Tindakan Terburuk</strong> (Worst).</div>
+              <div className="ins-item"><span>⏳</span> Durasi pengerjaan adalah <strong>90 menit</strong>.</div>
             </div>
             
             <div className="name-section">
               <label className="input-label">Nama Lengkap</label>
               <input 
-                type="text" className="name-input" placeholder="Masukkan nama..."
+                type="text" className="name-input" placeholder="Ketik nama Anda..."
                 value={userName} onChange={(e) => setUserName(e.target.value)}
               />
-              <button className="btn-calculate" onClick={() => userName.trim() ? setIsStarted(true) : alert('Isi nama!')}>
-                Mulai Test Sekarang
+              <button className="btn-calculate shadow-primary" onClick={() => userName.trim() ? setIsStarted(true) : alert('Isi nama!')}>
+                Mulai Sekarang
               </button>
             </div>
           </div>
@@ -107,16 +103,15 @@ const SJTAssessment = () => {
     );
   }
 
-  // --- VIEW: RESULTS ---
   if (isFinished) {
     const results = calculateResults();
     return (
       <div className="main-wrapper">
         <div className="container animate-in">
-          <div className="card result-card">
-            <div className="text-center mb-6">
+          <div className="card shadow-lg result-card">
+            <div className="text-center">
               <div className="success-icon">✅</div>
-              <h2>Hasil Penilaian Selesai</h2>
+              <h2>Assessment Selesai</h2>
               <p className="text-muted">Kandidat: <strong>{userName}</strong></p>
             </div>
 
@@ -124,20 +119,20 @@ const SJTAssessment = () => {
               <div className="notice-icon">📸</div>
               <div className="notice-text">
                 <strong>INSTRUKSI SCREENSHOT:</strong>
-                <p>Silakan screenshot halaman skor di bawah ini dan kirimkan ke tim HRD melalui WhatsApp.</p>
+                <p>Screenshot halaman ini dan kirimkan ke tim Recruitment Stoa.</p>
               </div>
             </div>
 
             <div className="stats-summary">
-              <div className="stat-pill">Soal Dijawab: <strong>{Object.keys(answers).length} / 90</strong></div>
+              <div className="stat-pill">Progress: {Object.keys(answers).length} / 90 Soal</div>
             </div>
 
             <div className="results-grid">
               {Object.entries(results).map(([code, score]) => (
                 <div key={code} className="result-item">
                   <div className="result-label">
-                    <span className="param-code">{code}</span>
-                    <span className="param-score">{score}%</span>
+                    <span>Parameter {code}</span>
+                    <span>{score}%</span>
                   </div>
                   <div className="progress-bg">
                     <div className="progress-bar-fill" style={{ width: `${score}%` }}></div>
@@ -145,35 +140,31 @@ const SJTAssessment = () => {
                 </div>
               ))}
             </div>
-
-            <button className="btn-calculate outline mt-6" onClick={() => window.location.reload()}>
-              Selesai & Keluar
-            </button>
           </div>
         </div>
       </div>
     );
   }
 
-  // --- VIEW: QUIZ ---
   const progress = (Object.keys(answers).length / allQuestions.length) * 100;
   return (
     <div className="main-wrapper">
       <div className="container">
-        <div className="sticky-nav">
+        <div className="sticky-nav shadow-sm">
           <div className="nav-content">
-            <span className="user-tag">{userName}</span>
+            <span className="user-tag">👤 {userName}</span>
             <span className={`timer-tag ${timeLeft < 300 ? 'urgent' : ''}`}>
-              {Math.floor(timeLeft / 60)}:{ (timeLeft % 60).toString().padStart(2, '0') }
+              {Math.floor(timeLeft / 60)}:{(timeLeft % 60).toString().padStart(2, '0')}
             </span>
           </div>
           <div className="progress-container"><div className="progress-fill" style={{ width: `${progress}%` }}></div></div>
         </div>
 
         {allQuestions.map((q, i) => (
-          <div key={q.id} className="question-card shadow-sm animate-in">
+          <div key={q.id} className="card shadow-md question-card animate-in">
             <div className="question-header">
-              <span className="question-number">No. {i + 1}</span>
+              <span className="question-number">Skenario {i + 1}</span>
+              <span className="dimension-label">{paramMap[q.dimension]}</span>
             </div>
             <div className="scenario-box">{q.scenario}</div>
             <div className="options-container">
@@ -185,7 +176,7 @@ const SJTAssessment = () => {
                   <div key={letter} className={`sjt-option-item ${isBest ? 'active-best' : ''} ${isWorst ? 'active-worst' : ''}`}>
                     <div className="option-info">
                       <span className="letter-circle">{letter}</span>
-                      <p>{opt}</p>
+                      <p className="option-text">{opt}</p>
                     </div>
                     <div className="sjt-action-btns">
                       <button className={`sjt-btn best ${isBest ? 'selected' : ''}`} onClick={() => handleAnswer(q.id, 'best', letter)}>BEST</button>
@@ -197,7 +188,11 @@ const SJTAssessment = () => {
             </div>
           </div>
         ))}
-        <div className="submit-area"><button className="btn-calculate" onClick={handleFinish} disabled={isSaving}>{isSaving ? 'Menyimpan...' : 'Kirim Jawaban'}</button></div>
+        <div className="submit-area">
+          <button className="btn-calculate shadow-primary" onClick={handleFinish} disabled={isSaving}>
+            {isSaving ? 'Menyimpan...' : 'Selesaikan Test'}
+          </button>
+        </div>
       </div>
     </div>
   );
