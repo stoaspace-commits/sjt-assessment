@@ -4,14 +4,19 @@ import './sjtStyles.css';
 import logo from './logo.png';
 
 const SJTAssessment = () => {
+  // --- States ---
   const [userName, setUserName] = useState('');
   const [isStarted, setIsStarted] = useState(false);
   const [answers, setAnswers] = useState({});
   const [isFinished, setIsFinished] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
+  const [startTime, setStartTime] = useState(null);
+
+  // Timer: 90 Menit
   const [timeLeft, setTimeLeft] = useState(5400); 
   const timerRef = useRef(null);
 
+  // Inisial Parameter Rahasia
   const paramMap = {
     customerService: 'CSO',
     teamwork: 'TMW',
@@ -25,6 +30,7 @@ const SJTAssessment = () => {
     scenarios.map(s => ({ ...s, dimension: dim }))
   );
 
+  // --- Logic Timer ---
   useEffect(() => {
     if (isStarted && !isFinished && timeLeft > 0) {
       timerRef.current = setInterval(() => setTimeLeft(p => p - 1), 1000);
@@ -33,6 +39,13 @@ const SJTAssessment = () => {
     }
     return () => clearInterval(timerRef.current);
   }, [isStarted, isFinished, timeLeft]);
+
+  const handleStart = () => {
+    if (!userName.trim()) return alert('Silakan masukkan nama Anda!');
+    setStartTime(new Date().toLocaleTimeString());
+    setIsStarted(true);
+    window.scrollTo(0, 0);
+  };
 
   const handleAnswer = (qId, type, letter) => {
     setAnswers(prev => {
@@ -53,20 +66,53 @@ const SJTAssessment = () => {
         if (userAns.best === q.correctBest) totalDimScore += 2;
         if (userAns.worst === q.correctWorst) totalDimScore += 1;
       });
-      scores[paramMap[dim]] = ((totalDimScore / 30) * 100).toFixed(1);
+      // Asumsi 15 soal per dimensi, skor maks per dimensi = 30-45 tergantung data
+      const percentage = ((totalDimScore / (questions.length * 2)) * 100).toFixed(1);
+      scores[paramMap[dim]] = percentage;
     });
     return scores;
   };
 
-  const handleFinish = () => {
+  const handleFinish = async () => {
     setIsSaving(true);
-    setTimeout(() => {
+    const results = calculateResults();
+    const endTimeStr = new Date().toLocaleTimeString();
+
+    // Persiapan Payload untuk Google Sheets
+    const payload = {
+      nama: userName,
+      mulai: startTime,
+      selesai: endTimeStr,
+      skor_cso: results['CSO'],
+      skor_tmw: results['TMW'],
+      skor_int: results['INT'],
+      skor_stm: results['STM'],
+      skor_ini: results['INI'],
+      skor_acc: results['ACC'],
+      total_terjawab: Object.keys(answers).length,
+      raw_answers: answers
+    };
+
+    try {
+      // GANTI DENGAN URL WEB APP GOOGLE SCRIPT ANDA
+      const WEB_APP_URL = "https://script.google.com/macros/s/XXXXX/exec";
+      
+      await fetch(WEB_APP_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+    } catch (error) {
+      console.error("Error saving data:", error);
+    } finally {
       setIsFinished(true);
       setIsSaving(false);
       window.scrollTo(0, 0);
-    }, 2000);
+    }
   };
 
+  // --- VIEW 1: OPENING ---
   if (!isStarted) {
     return (
       <div className="main-wrapper">
@@ -77,19 +123,21 @@ const SJTAssessment = () => {
           </div>
           <div className="card shadow-premium intro-card text-center">
             <h1>Decision Making Test</h1>
-            <p className="text-muted">Pilih satu opsi <b>Terbaik (Best)</b> dan satu opsi <b>Terburuk (Worst)</b> pada setiap skenario operasional yang tersedia.</p>
-            
+            <p className="description text-muted">
+              Tes ini mengukur kemampuan pengambilan keputusan Anda dalam situasi kerja nyata di Stoa.
+            </p>
             <div className="instructions-box">
-              <div className="ins-row"><span>⭐</span> Pilih 1 respon paling efektif (Best).</div>
-              <div className="ins-row"><span>⚠️</span> Pilih 1 respon paling tidak efektif (Worst).</div>
+              <div className="ins-row"><span>✅</span> Pilih <b>Satu Tindakan Terbaik</b> (Best) per skenario.</div>
+              <div className="ins-row"><span>❌</span> Pilih <b>Satu Tindakan Terburuk</b> (Worst) per skenario.</div>
+              <div className="ins-row"><span>⏳</span> Anda memiliki waktu <b>90 Menit</b>.</div>
             </div>
-
             <div className="name-section">
+              <label className="input-label">Nama Lengkap</label>
               <input 
-                type="text" className="name-input-large" placeholder="Nama Lengkap Anda..."
+                type="text" className="name-input-large" placeholder="Ketik nama di sini..."
                 value={userName} onChange={(e) => setUserName(e.target.value)}
               />
-              <button className="btn-main shadow-primary" onClick={() => userName.trim() ? setIsStarted(true) : alert('Isi nama!')}>
+              <button className="btn-main shadow-primary" onClick={handleStart}>
                 Mulai Assessment
               </button>
             </div>
@@ -99,10 +147,11 @@ const SJTAssessment = () => {
     );
   }
 
+  // --- VIEW 2: RESULTS ---
   if (isFinished) {
     const results = calculateResults();
     return (
-      <div className="main-wrapper results-bg">
+      <div className="main-wrapper">
         <div className="container animate-in">
           <div className="card shadow-vibrant result-card-premium">
             <div className="success-header">
@@ -114,9 +163,13 @@ const SJTAssessment = () => {
             <div className="screenshot-banner">
               <span className="camera-icon">📸</span>
               <div>
-                <strong>INSTRUKSI HRD:</strong>
-                <p>Screenshot hasil di bawah ini dan kirim ke WhatsApp Recruitment.</p>
+                <strong>INSTRUKSI SCREENSHOT:</strong>
+                <p>Silakan screenshot skor di bawah ini untuk bukti pengiriman.</p>
               </div>
+            </div>
+
+            <div className="stats-summary-pill">
+              Soal Terjawab: {Object.keys(answers).length} / 90
             </div>
 
             <div className="results-container">
@@ -133,17 +186,16 @@ const SJTAssessment = () => {
               ))}
             </div>
             
-            <div className="finish-footer">
-              <p>Total Soal: {Object.keys(answers).length} / 90</p>
-              <button className="btn-secondary" onClick={() => window.location.reload()}>Keluar</button>
-            </div>
+            <button className="btn-secondary" onClick={() => window.location.reload()}>Keluar</button>
           </div>
         </div>
       </div>
     );
   }
 
+  // --- VIEW 3: QUIZ ---
   const progress = (Object.keys(answers).length / allQuestions.length) * 100;
+
   return (
     <div className="main-wrapper">
       <div className="container">
@@ -161,7 +213,6 @@ const SJTAssessment = () => {
           <div key={q.id} className="card shadow-md question-card-v2 animate-in">
             <div className="q-meta">
               <span className="q-number">Skenario {i + 1}</span>
-              <span className="q-tag">{paramMap[q.dimension]}</span>
             </div>
             <div className="q-scenario">{q.scenario}</div>
             
@@ -196,9 +247,10 @@ const SJTAssessment = () => {
             </div>
           </div>
         ))}
-        <div className="bottom-area">
+
+        <div className="submit-area">
           <button className="btn-main shadow-primary" onClick={handleFinish} disabled={isSaving}>
-            {isSaving ? 'Menyimpan...' : 'Selesaikan Assessment'}
+            {isSaving ? 'Menyimpan...' : 'Kirim Jawaban Akhir'}
           </button>
         </div>
       </div>
