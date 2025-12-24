@@ -50,6 +50,7 @@ const SJTAssessment = () => {
   const handleAnswer = (qId, type, letter) => {
     setAnswers(prev => {
       const current = prev[qId] || {};
+      // Mencegah pilihan yang sama untuk Best dan Worst
       if (type === 'best' && current.worst === letter) return prev;
       if (type === 'worst' && current.best === letter) return prev;
       return { ...prev, [qId]: { ...current, [type]: letter } };
@@ -66,7 +67,7 @@ const SJTAssessment = () => {
         if (userAns.best === q.correctBest) totalDimScore += 2;
         if (userAns.worst === q.correctWorst) totalDimScore += 1;
       });
-      // Asumsi 15 soal per dimensi, skor maks per dimensi = 30-45 tergantung data
+      // Menghitung persentase berdasarkan skor maksimal (soal * 2)
       const percentage = ((totalDimScore / (questions.length * 2)) * 100).toFixed(1);
       scores[paramMap[dim]] = percentage;
     });
@@ -78,8 +79,11 @@ const SJTAssessment = () => {
     const results = calculateResults();
     const endTimeStr = new Date().toLocaleTimeString();
 
-    // Persiapan Payload untuk Google Sheets
-    const payload = {
+    // 1. GANTI URL INI dengan URL Web App dari New Deployment Google Script Anda
+    const WEB_APP_URL = "URL_WEB_APP_BARU_ANDA";
+
+    // 2. Susun Query Parameters (Metode GET lebih stabil untuk Google Script)
+    const params = new URLSearchParams({
       nama: userName,
       mulai: startTime,
       selesai: endTimeStr,
@@ -89,30 +93,27 @@ const SJTAssessment = () => {
       skor_stm: results['STM'],
       skor_ini: results['INI'],
       skor_acc: results['ACC'],
-      total_terjawab: Object.keys(answers).length,
-      raw_answers: answers
-    };
+      total: Object.keys(answers).length,
+      status: "Selesai"
+    }).toString();
 
     try {
-      // GANTI DENGAN URL WEB APP GOOGLE SCRIPT ANDA
-      const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbx3Z_rRaM0qTcNdrYOPUq316wstmvPVGLwfAVWBEsd35xrvOHB133QgpeZILQaiSTYzhQ/exec";
-      
-      await fetch(WEB_APP_URL, {
-        method: "POST",
+      // Mengirim data menggunakan metode GET ke URL Google Script
+      await fetch(`${WEB_APP_URL}?${params}`, {
+        method: "GET",
         mode: "no-cors",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
       });
     } catch (error) {
       console.error("Error saving data:", error);
     } finally {
+      // Tetap tampilkan hasil meskipun fetch gagal (agar kandidat bisa screenshot)
       setIsFinished(true);
       setIsSaving(false);
       window.scrollTo(0, 0);
     }
   };
 
-  // --- VIEW 1: OPENING ---
+  // --- VIEW 1: LAMAN AWAL (MIRIP BIG FIVE) ---
   if (!isStarted) {
     return (
       <div className="main-wrapper">
@@ -124,17 +125,17 @@ const SJTAssessment = () => {
           <div className="card shadow-premium intro-card text-center">
             <h1>Decision Making Test</h1>
             <p className="description text-muted">
-              Tes ini mengukur kemampuan pengambilan keputusan Anda dalam situasi kerja nyata di Stoa.
+              Gunakan panduan operasional Stoa untuk memilih tindakan terbaik dan terburuk dalam setiap skenario.
             </p>
             <div className="instructions-box">
-              <div className="ins-row"><span>✅</span> Pilih <b>Satu Tindakan Terbaik</b> (Best) per skenario.</div>
-              <div className="ins-row"><span>❌</span> Pilih <b>Satu Tindakan Terburuk</b> (Worst) per skenario.</div>
-              <div className="ins-row"><span>⏳</span> Anda memiliki waktu <b>90 Menit</b>.</div>
+              <div className="ins-row"><span>✅</span> Pilih <b>Satu Tindakan Terbaik</b> (Best).</div>
+              <div className="ins-row"><span>❌</span> Pilih <b>Satu Tindakan Terburuk</b> (Worst).</div>
+              <div className="ins-row"><span>⏳</span> Durasi pengerjaan adalah <b>90 menit</b>.</div>
             </div>
             <div className="name-section">
               <label className="input-label">Nama Lengkap</label>
               <input 
-                type="text" className="name-input-large" placeholder="Ketik nama di sini..."
+                type="text" className="name-input-large" placeholder="Ketik nama Anda..."
                 value={userName} onChange={(e) => setUserName(e.target.value)}
               />
               <button className="btn-main shadow-primary" onClick={handleStart}>
@@ -147,7 +148,7 @@ const SJTAssessment = () => {
     );
   }
 
-  // --- VIEW 2: RESULTS ---
+  // --- VIEW 2: LAMAN HASIL (PREMIUM & NOT FLAT) ---
   if (isFinished) {
     const results = calculateResults();
     return (
@@ -164,19 +165,19 @@ const SJTAssessment = () => {
               <span className="camera-icon">📸</span>
               <div>
                 <strong>INSTRUKSI SCREENSHOT:</strong>
-                <p>Silakan screenshot skor di bawah ini untuk bukti pengiriman.</p>
+                <p>Silakan screenshot halaman skor di bawah ini dan kirimkan ke tim Recruitment Stoa.</p>
               </div>
             </div>
 
-            <div className="stats-summary-pill">
-              Soal Terjawab: {Object.keys(answers).length} / 90
+            <div className="stats-pill-container">
+               <span className="stat-pill">Total Soal: {Object.keys(answers).length} / 90</span>
             </div>
 
             <div className="results-container">
               {Object.entries(results).map(([code, score]) => (
                 <div key={code} className="result-row-premium">
                   <div className="result-meta">
-                    <span className="code-tag">{code}</span>
+                    <span className="code-tag">Parameter {code}</span>
                     <span className="score-text">{score}%</span>
                   </div>
                   <div className="bar-container">
@@ -186,14 +187,14 @@ const SJTAssessment = () => {
               ))}
             </div>
             
-            <button className="btn-secondary" onClick={() => window.location.reload()}>Keluar</button>
+            <button className="btn-secondary" onClick={() => window.location.reload()}>Keluar & Selesai</button>
           </div>
         </div>
       </div>
     );
   }
 
-  // --- VIEW 3: QUIZ ---
+  // --- VIEW 3: LAMAN SOAL ---
   const progress = (Object.keys(answers).length / allQuestions.length) * 100;
 
   return (
@@ -213,6 +214,7 @@ const SJTAssessment = () => {
           <div key={q.id} className="card shadow-md question-card-v2 animate-in">
             <div className="q-meta">
               <span className="q-number">Skenario {i + 1}</span>
+              <span className="q-tag">{paramMap[q.dimension]}</span>
             </div>
             <div className="q-scenario">{q.scenario}</div>
             
@@ -250,7 +252,7 @@ const SJTAssessment = () => {
 
         <div className="submit-area">
           <button className="btn-main shadow-primary" onClick={handleFinish} disabled={isSaving}>
-            {isSaving ? 'Menyimpan...' : 'Kirim Jawaban Akhir'}
+            {isSaving ? 'Menyimpan...' : 'Selesaikan Assessment'}
           </button>
         </div>
       </div>
