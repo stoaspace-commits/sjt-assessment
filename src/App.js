@@ -1,6 +1,5 @@
 import React from 'react';
 import SJTAssessment from './SJTAssessment';
-import './sjtStyles.css';
 
 function App() {
   return (
