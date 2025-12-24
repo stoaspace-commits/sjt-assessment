@@ -3,180 +3,180 @@ export const sjtQuestionsData = {
   customerService: [
     {
       id: 'CS1',
-      scenario: 'Customer pesan Cappuccino, tapi setelah diantarkan dia komplain "ini terlalu banyak foam, saya tidak suka". Apa yang Anda lakukan?',
+      scenario: 'Teman kamu minta tolong edit foto, tapi pas jadi dia bilang "Kok hasilnya agak aneh ya, aku kurang suka stilenya". Apa yang kamu lakukan?',
       options: [
-        'Jelaskan bahwa Cappuccino memang karakteristiknya banyak foam, mungkin customer lebih cocok pesan Latte',
-        'Minta maaf dan langsung remake menjadi Latte tanpa charge tambahan',
-        'Minta maaf, tanyakan preferensi customer, dan tawarkan adjust foam atau ganti ke menu lain',
-        'Bilang bahwa itu sudah sesuai standar Cappuccino dan tidak bisa diubah'
+        'Jelasin kalau gaya editannya emang begitu, mungkin dia lebih cocok edit sendiri',
+        'Minta maaf dan langsung edit ulang jadi gaya lain tanpa tanya dia dulu',
+        'Minta maaf, tanya bagian mana yang dia kurang sreg, terus tawarin buat adjust ulang',
+        'Bilang kalau itu sudah bagus dan dia nggak usah banyak komplain'
       ],
       correctBest: 'C',
       correctWorst: 'D'
     },
     {
       id: 'CS2',
-      scenario: 'Customer bertanya "Mana yang lebih enak, Americano atau Long Black?" Anda sebenarnya tidak terlalu paham bedanya. Apa yang Anda lakukan?',
+      scenario: 'Teman tanya ke kamu, "Eh, mata kuliah/pelajaran A sama B mending ambil yang mana ya?" Padahal kamu sendiri belum riset. Apa yang kamu lakukan?',
       options: [
-        'Bilang "sama saja kok" agar terlihat confident',
-        'Jujur bilang tidak tahu dan suruh customer pilih sendiri',
-        'Tebak perbedaannya berdasarkan yang pernah Anda dengar',
-        'Jujur bilang akan cek dulu informasi akuratnya, lalu explain dengan benar'
+        'Bilang "sama aja kok" cuma biar kelihatan tahu dan yakin',
+        'Jujur bilang nggak tahu dan suruh dia pilih sendiri aja',
+        'Asal jawab berdasarkan gosip yang pernah kamu dengar',
+        'Jujur bilang belum tahu pasti, tapi tawarin buat barengan cek infonya'
       ],
       correctBest: 'D',
       correctWorst: 'A'
     },
     {
       id: 'CS3',
-      scenario: 'Customer datang 5 menit sebelum closing time dan pesan 5 minuman untuk takeaway. Anda sudah mulai cleaning. Apa yang Anda lakukan?',
+      scenario: 'Kamu sudah mau balik karena urusan sudah beres, tiba-tiba ada teman datang butuh bantuan urgent buat tugas yang harus dikumpul besok. Apa yang kamu lakukan?',
       options: [
-        'Bilang dengan sopan bahwa sudah closing time dan tidak bisa terima order',
-        'Terima order dengan senyum dan kerjakan dengan maksimal meski sudah lelah',
-        'Terima order tapi tunjukkan bahasa tubuh tidak senang agar customer tahu',
-        'Terima order tapi buat dengan cepat saja, standar kualitas agak dikurangi'
+        'Bilang kalau jam bantu-bantu sudah lewat dan kamu mau istirahat',
+        'Terima permintaannya dengan senyum dan bantu semaksimal mungkin walau sudah capek',
+        'Terima tapi sambil pasang muka bete biar dia merasa nggak enak',
+        'Bantu tapi ngerjainnya asal-asalan karena pengen cepat pulang'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'CS4',
-      scenario: 'Customer komplain bahwa waiting time 15 menit terlalu lama, padahal sedang sangat ramai dan Anda sudah kerja secepat mungkin. Apa yang Anda lakukan?',
+      scenario: 'Teman sekelompok protes karena kamu lama balas chat, padahal kamu lagi sibuk berat dan sudah berusaha secepat mungkin. Apa yang kamu lakukan?',
       options: [
-        'Jelaskan bahwa memang sedang ramai dan minta pengertian customer',
-        'Minta maaf atas waiting time, kasih update progress ordernya, dan terima komplainnya dengan empati',
-        'Ignore karena Anda sudah maksimal dan customer tidak fair',
-        'Bilang "kalau tidak mau tunggu, bisa cancel kok"'
+        'Jelasin kalau kamu emang lagi sibuk dan minta dia buat ngertiin',
+        'Minta maaf karena lama balas, kasih update progress tugasnya, dan terima keluhannya',
+        'Cuekin aja karena kamu merasa sudah kerja keras dan dia nggak adil',
+        'Bilang "kalau nggak sabar, mending kerjain aja sendiri"'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'CS5',
-      scenario: 'Customer reguler yang biasa ramah tiba-tiba terlihat bad mood dan cuek saat order. Apa yang Anda lakukan?',
+      scenario: 'Sahabat yang biasanya ceria tiba-tiba kelihatan bad mood dan cuek pas kamu ajak ngobrol. Apa yang kamu lakukan?',
       options: [
-        'Ikut cuek juga karena dia yang mulai',
-        'Tetap ramah seperti biasa, beri space, dan tidak terlalu memaksa small talk',
-        'Tanya "kenapa kok bad mood?" untuk show care',
-        'Ignore dan layani secukupnya saja'
+        'Ikut cuek juga biar dia tahu rasanya dikacangin',
+        'Tetap ramah, kasih dia ruang, dan nggak maksa dia cerita kalau belum mau',
+        'Langsung tanya "lo kenapa sih kok baperan banget?"',
+        'Ignore dan cuma ngomong seadanya kalau perlu banget'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'CS6',
-      scenario: 'Customer minta rekomendasi menu karena pertama kali datang dan bingung. Anda lihat customer bawa laptop, sepertinya akan kerja lama. Apa yang Anda rekomendasikan?',
+      scenario: 'Ada mahasiswa baru/adik kelas nanya rekomendasi organisasi karena dia pengen nambah relasi. Apa yang kamu rekomendasikan?',
       options: [
-        'Best-seller apapun karena pasti enak',
-        'Menu yang paling mahal untuk increase sales',
-        'Tanya preferensi (strong/mild, hot/iced), lalu rekomendasikan sesuai kebutuhan kerja lama',
-        'Bilang "terserah aja, semua enak kok"'
+        'Saranin organisasi yang paling hits biar dia terkenal',
+        'Saranin organisasi yang kamu ikuti biar kamu ada temennya',
+        'Tanya minat dia apa, lalu kasih saran yang sesuai dengan tujuan dia',
+        'Bilang "terserah aja, semua organisasi sama aja kok"'
       ],
       correctBest: 'C',
       correctWorst: 'B'
     },
     {
       id: 'CS7',
-      scenario: 'Customer komplain ada rambut di minumannya (padahal Anda yakin semua staff sudah pakai hairnet). Customer minta refund dan terlihat jijik. Apa yang Anda lakukan?',
+      scenario: 'Teman kamu komplain nemu kesalahan fatal di catatan yang kamu pinjemin. Kamu yakin sudah teliti. Apa yang kamu lakukan?',
       options: [
-        'Apologize tulus, langsung refund atau remake, dan pastikan customer merasa didengar',
-        'Bilang "mungkin rambut customer sendiri" karena Anda yakin tidak mungkin dari staff',
-        'Refund dengan reluctant sambil cek CCTV untuk buktikan siapa yang salah',
-        'Minta maaf tapi explain bahwa semua staff pakai hairnet, jadi kemungkinan bukan dari staff'
+        'Minta maaf tulus, langsung cek bareng, dan hargai masukannya',
+        'Bilang "mungkin lo yang salah baca" karena kamu yakin sudah benar',
+        'Benerin catatan sambil ngedumel pelan karena merasa disalahin',
+        'Minta maaf tapi jelasin kalau kamu sudah teliti, jadi kecil kemungkinan salah'
       ],
       correctBest: 'A',
       correctWorst: 'B'
     },
     {
       id: 'CS8',
-      scenario: 'Customer pesan minuman custom yang tidak ada di menu dan agak rumit ("Americano with oat milk, 2 pump vanilla, less ice, extra hot"). Apa yang Anda lakukan?',
+      scenario: 'Teman minta tolong sesuatu yang cukup ribet dan nggak biasa kamu lakuin buat tugasnya. Apa yang kamu lakukan?',
       options: [
-        'Tolak karena tidak ada di menu dan terlalu ribet',
-        'Terima dengan antusias, catat detail, confirm ulang, dan buat sebaik mungkin',
-        'Terima tapi sounding kesal agar customer tahu ini merepotkan',
-        'Terima tapi bilang "nggak guarantee ya hasilnya gimana"'
+        'Tolak karena nggak masuk akal dan terlalu merepotkan',
+        'Terima dengan senang hati, catat detail maunya apa, dan usahain yang terbaik',
+        'Terima tapi sambil nunjukin ekspresi kesal biar dia tahu ini susah',
+        'Terima tapi bilang "nggak janji ya hasilnya bakal bagus"'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'CS9',
-      scenario: 'Customer komplain harga terlalu mahal dan bandingkan dengan franchise besar. Apa yang Anda lakukan?',
+      scenario: 'Teman kamu komplain iuran kelompok terlalu mahal dibanding kelompok lain. Apa yang kamu lakukan?',
       options: [
-        'Defensive dan bilang "kalau mahal ya jangan beli di sini"',
-        'Setuju dengan customer dan bilang "iya sih emang agak mahal"',
-        'Dengan sopan explain value proposition (specialty coffee, quality, dll) tanpa membanding-bandingkan',
-        'Ignore komplainnya dan langsung tanya "jadi mau pesan atau tidak?"'
+        'Defensif dan bilang "kalau keberatan ya cari kelompok lain sana"',
+        'Setuju sama dia dan ikut ngeluh kalau emang kemahalan',
+        'Jelasin rincian pengeluarannya buat apa aja secara transparan dan sopan',
+        'Cuekin komplainnya dan langsung tagih aja duitnya'
       ],
       correctBest: 'C',
       correctWorst: 'A'
     },
     {
       id: 'CS10',
-      scenario: 'Ada customer difabel (kursi roda) kesulitan ambil minuman di counter. Area sempit dan agak tricky. Apa yang Anda lakukan?',
+      scenario: 'Ada teman difabel yang kesulitan bawa barang-barang kuliahnya di area tangga. Apa yang kamu lakukan?',
       options: [
-        'Tunggu customer manage sendiri karena takut terlihat offensive',
-        'Proaktif tawarkan bantuan dengan sopan, dan assist sesuai kebutuhan customer',
-        'Panggil rekan kerja lain untuk handle karena Anda tidak tahu cara yang tepat',
-        'Antarkan minuman ke meja customer tanpa tanya, langsung action'
+        'Tunggu dia minta tolong dulu karena takut dia tersinggung',
+        'Langsung tawarin bantuan dengan sopan dan bantu sesuai maunya',
+        'Panggil teman lain buat bantuin karena kamu buru-buru',
+        'Bantuin tanpa nanya dulu, langsung ambil barang-barangnya'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
-      id: 'CS11',
-      scenario: 'Customer pesan takeaway 10 minuman untuk meeting, tapi saat pickup bilang "ada 2 yang salah rasa". Sudah lewat 20 menit dari pickup. Apa yang Anda lakukan?',
+      id: 'INI11', // Re-indexed to match CS flow
+      scenario: 'Teman pinjam charger kamu, pas dikembaliin ternyata kabelnya ada yang terkelupas. Apa reaksi kamu?',
       options: [
-        'Tolak karena sudah lewat waktu dan mungkin sudah diminum',
-        'Tanyakan dengan sopan detail kesalahannya, lalu tawarkan solusi (remake atau voucher)',
-        'Bilang "harusnya cek dulu sebelum keluar"',
-        'Remake tanpa pertanyaan tapi catat bahwa ini suspicious'
+        'Langsung marahin dia dan suruh ganti saat itu juga',
+        'Tanya baik-baik kejadiannya, dan cari solusi bareng buat benerin',
+        'Bilang "harusnya hati-hati dong kalau pakai barang orang"',
+        'Terima aja tanpa nanya tapi dalam hati dendam'
       ],
       correctBest: 'B',
-      correctWorst: 'C'
+      correctWorst: 'A'
     },
     {
       id: 'CS12',
-      scenario: 'Customer komplain WiFi lambat dan ganggu pekerjaannya. Anda cek memang sedang bermasalah. Apa yang Anda lakukan?',
+      scenario: 'Teman komplain WiFi di tempat nongkrong kalian lemot banget dan ganggu tugasnya. Kamu yang pilih tempatnya. Apa yang kamu lakukan?',
       options: [
-        'Bilang "maaf, kami tidak bisa kontrol WiFi, complaint ke provider"',
-        'Apologize, explain situasinya, tawarkan alternatif (hotspot jika ada, atau voucher untuk next visit)',
-        'Ignore karena bukan tanggung jawab barista',
-        'Bilang "WiFi gratis ya, jangan terlalu expect"'
+        'Bilang "ya bukan salah gue, salahin pemilik kafenya"',
+        'Minta maaf, bantu cari spot yang sinyalnya lebih bagus, atau tawarin hotspot',
+        'Cuek aja karena kamu nggak merasa bertanggung jawab soal WiFi',
+        'Bilang "WiFi gratisan jangan banyak berharap"'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'CS13',
-      scenario: 'Customer bawa anak kecil yang sangat ramai dan mengganggu customer lain. Apa yang Anda lakukan?',
+      scenario: 'Ada adik kelas/adik teman yang main di area belajar kalian dan sangat berisik. Apa yang kamu lakukan?',
       options: [
-        'Tegur customer dengan tegas untuk menenangkan anaknya',
-        'Biarkan saja karena tidak mau create conflict',
-        'Approach dengan ramah, tawarkan sesuatu untuk anak (coloring book, snack) dan subtle reminder tentang comfort customer lain',
-        'Minta customer pindah ke area outdoor jika tidak bisa kontrol anaknya'
+        'Tegur anak itu dengan keras biar kapok',
+        'Diemin aja karena males cari masalah',
+        'Samperin dengan ramah, ajak main bentar atau kasih sesuatu biar tenang',
+        'Suruh mereka pergi ke tempat lain dengan nada ketus'
       ],
       correctBest: 'C',
       correctWorst: 'A'
     },
     {
       id: 'CS14',
-      scenario: 'Customer minta foto dengan latte art Anda untuk Instagram, tapi hasilnya hari ini kurang bagus. Apa yang Anda lakukan?',
+      scenario: 'Teman minta diajarin materi yang kamu jago biar dia bisa dapet nilai bagus buat postingan sosmed. Apa yang kamu lakukan?',
       options: [
-        'Tolak dan bilang "hari ini latte art-nya kurang bagus"',
-        'Bilang boleh tapi disclaimer hasil tidak maksimal',
-        'Remake dengan effort maksimal untuk hasil yang Instagram-worthy',
-        'Kasih foto latte art lama yang lebih bagus dari gallery'
+        'Tolak dan bilang "males ah, belajar sendiri sana"',
+        'Bilang boleh tapi kasih syarat dia harus bayarin makan',
+        'Ajarin dengan sabar sampai dia bener-bener paham konsepnya',
+        'Kasih jawaban kamu aja biar dia tinggal salin'
       ],
       correctBest: 'C',
       correctWorst: 'D'
     },
     {
       id: 'CS15',
-      scenario: 'Customer pesan untuk dine-in tapi tiba-tiba berubah menjadi takeaway setelah minuman sudah dibuat di cup keramik. Apa yang Anda lakukan?',
+      scenario: 'Teman minta nebeng pulang tapi rumahnya berlawanan arah dan kamu lagi buru-buru. Apa yang kamu lakukan?',
       options: [
-        'Bilang "sudah terlanjur, tidak bisa ganti"',
-        'Minta charge tambahan untuk ganti ke paper cup',
-        'Dengan senang hati pindahkan ke paper cup tanpa charge',
-        'Kasih disposable cup kosong, suruh customer pindahkan sendiri'
+        'Bilang "nggak bisa, rumah lo jauh banget"',
+        'Minta dia bayar bensin kalau mau nebeng',
+        'Jelasin baik-baik kalau kamu lagi buru-buru, terus bantuin dia pesen ojol',
+        'Bawa dia nebeng tapi sepanjang jalan kamu cuekin dan ngebut'
       ],
       correctBest: 'C',
       correctWorst: 'D'
@@ -186,180 +186,180 @@ export const sjtQuestionsData = {
   teamwork: [
     {
       id: 'TW1',
-      scenario: 'Rekan kerja Anda salah buat pesanan, dan customer komplain ke Anda. Shift leader bertanya apa yang terjadi. Apa yang Anda katakan?',
+      scenario: 'Teman kelompokmu salah masukin data tugas, dan kalian ditegur dosen. Pas ditanya kenapa bisa salah, apa yang kamu bilang?',
       options: [
-        'Si [nama] yang salah buat, saya nggak tahu',
-        'Ada kesalahan di order, sudah saya handle remake-nya',
-        'Saya kurang koordinasi dengan tim, next time akan lebih communicate',
-        'Sistemnya yang bikin bingung, jadi ada miscommunication'
+        'Si [Nama Teman] yang salah ngerjain Pak, saya nggak ikut-ikut',
+        'Maaf Pak ada kesalahan di bagian itu, tapi sudah langsung kami perbaiki',
+        'Saya kurang koordinasi sama tim, kedepannya bakal lebih sering komunikasi',
+        'Instruksi tugasnya emang bikin bingung, jadi kami salah paham'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
       id: 'TW2',
-      scenario: 'Anda notice rekan kerja baru terlihat bingung dan struggle, tapi tidak minta bantuan. Anda sedang tidak terlalu sibuk. Apa yang Anda lakukan?',
+      scenario: 'Kamu lihat anggota tim baru kelihatan bingung dan kewalahan, tapi dia nggak berani nanya. Kamu lagi nggak terlalu sibuk. Apa yang kamu lakukan?',
       options: [
-        'Tunggu dia minta bantuan dulu, baru Anda bantu',
-        'Proaktif approach dan tawarkan bantuan atau guidance',
-        'Biarkan dia belajar dari struggle sendiri, itu bagian dari proses',
-        'Laporkan ke shift leader bahwa dia terlihat tidak capable'
+        'Tunggu dia minta tolong dulu, baru kamu bantu',
+        'Samperin duluan dan tawarin bantuan atau bimbingan',
+        'Biarin aja dia pusing sendiri, itu bagian dari proses belajar',
+        'Lapor ke ketua kelompok kalau dia kelihatannya nggak kompeten'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'TW3',
-      scenario: 'Ada konflik antara 2 rekan kerja tentang pembagian tugas. Keduanya minta Anda jadi "wasit" dan menentukan siapa yang benar. Apa yang Anda lakukan?',
+      scenario: 'Ada ribut-berantem antara 2 teman soal pembagian tugas. Keduanya minta kamu mutusin siapa yang bener. Apa yang kamu lakukan?',
       options: [
-        'Pilih salah satu yang menurut Anda benar',
-        'Bilang "saya nggak mau ikut campur urusan kalian"',
-        'Facilitate diskusi, dengarkan kedua sisi, dan bantu find fair solution bersama',
-        'Lapor ke shift leader dan serahkan ke mereka untuk handle'
+        'Pilih salah satu teman yang menurut kamu lebih bener',
+        'Bilang "gue nggak mau ikut campur urusan kalian"',
+        'Ajak ngobrol bareng, dengerin alasan keduanya, terus cari solusi tengah-tengah',
+        'Lapor ke ketua kelompok biar mereka aja yang urus'
       ],
       correctBest: 'C',
       correctWorst: 'B'
     },
     {
       id: 'TW4',
-      scenario: 'Shift leader assign tugas cleaning yang Anda rasa bukan giliran Anda (giliran rekan lain). Apa yang Anda lakukan?',
+      scenario: 'Ketua kelompok kasih kamu tugas piket/bersih-bersih yang harusnya bukan jadwal kamu. Apa yang kamu lakukan?',
       options: [
-        'Menolak dan argue bahwa itu bukan giliran Anda',
-        'Kerjakan tugas sambil passive-aggressive (ngomel-ngomel)',
-        'Kerjakan dengan baik, lalu di waktu yang tepat diskusikan rotation schedule dengan shift leader',
-        'Kerjakan sambil complaint ke rekan kerja lain tentang ketidakadilan ini'
+        'Nolak dan protes karena itu bukan giliran kamu',
+        'Kerjain tapi sambil ngomel-ngomel pasif-agresif',
+        'Kerjain dulu dengan baik, terus nanti diskusikan soal jadwal biar adil',
+        'Kerjain sambil curhat ke teman lain betapa nggak adilnya ketua itu'
       ],
       correctBest: 'C',
       correctWorst: 'D'
     },
     {
       id: 'TW5',
-      scenario: 'Anda punya cara kerja yang lebih efisien dari rekan kerja, tapi rekan Anda tetap pakai cara lama dan slower. Apa yang Anda lakukan?',
+      scenario: 'Kamu punya cara ngerjain tugas yang lebih cepat, tapi temanmu tetap pakai cara lama yang ribet. Apa yang kamu lakukan?',
       options: [
-        'Biarkan saja, yang penting pekerjaan Anda selesai',
-        'Kritik cara kerjanya di depan customer atau staff lain',
-        'Di waktu yang tepat, share cara Anda dengan humble dan tawarkan untuk ajari',
-        'Lapor ke shift leader bahwa dia kerja terlalu lambat'
+        'Biarin aja, yang penting urusan kamu kelar',
+        'Kritik cara kerjanya di depan teman-teman lain biar dia sadar',
+        'Pas lagi santai, sharing cara kamu dengan rendah hati dan tawarin buat ajarin',
+        'Lapor ke ketua kalau dia kerjanya lambat banget'
       ],
       correctBest: 'C',
       correctWorst: 'B'
     },
     {
       id: 'TW6',
-      scenario: 'Tim Anda harus lembur untuk prepare event besar besok, tapi Anda sudah ada janji penting dengan keluarga malam ini. Apa yang Anda lakukan?',
+      scenario: 'Kelompok harus ngerjain tugas sampai malam, tapi kamu sudah ada janji sama keluarga. Apa yang kamu lakukan?',
       options: [
-        'Langsung pulang sesuai jadwal tanpa bilang apa-apa',
-        'Pulang sesuai jadwal tapi explain situasi dan tawarkan datang lebih pagi besok untuk bantu',
-        'Cancel janji keluarga dan ikut lembur tanpa bicara',
-        'Ikut lembur sambil ngomel dan tunjukkan rasa tidak ikhlas'
+        'Langsung cabut gitu aja tanpa bilang-bilang',
+        'Izin pulang duluan, jelasin situasinya, dan tawarin buat lanjutin bagian kamu besok pagi',
+        'Batalin janji keluarga dan ikut ngerjain sambil cemberut',
+        'Tetap ikut tapi kerjanya asal-asalan karena pengen cepat kelar'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'TW7',
-      scenario: 'Rekan kerja Anda sering datang terlambat dan Anda yang selalu cover pekerjaannya. Anda mulai kesal. Apa yang Anda lakukan?',
+      scenario: 'Ada teman kelompok yang sering telat datang pas kerja kelompok dan kamu yang selalu cover dia. Apa yang kamu lakukan?',
       options: [
-        'Bicara empat mata dengan rekan tersebut secara konstruktif tentang impact ke tim',
-        'Passive-aggressive: stop cover pekerjaannya biar dia kena masalah sendiri',
-        'Komplain ke semua rekan kerja lain tentang dia',
-        'Langsung lapor ke manager tanpa bicara ke orangnya dulu'
+        'Ngobrol empat mata sama dia secara baik-baik soal dampaknya ke tim',
+        'Berhenti bantuin dia biar dia kena tegur dosen sendiri',
+        'Ngeluh soal dia ke semua teman kelas',
+        'Langsung lapor dosen biar nilai dia dikurangin tanpa nanya ke dia dulu'
       ],
       correctBest: 'A',
       correctWorst: 'C'
     },
     {
       id: 'TW8',
-      scenario: 'Ada ide improvement dari Anda, tapi rekan kerja senior menolak dengan alasan "sudah biasa begini". Apa yang Anda lakukan?',
+      scenario: 'Kamu punya ide bagus buat proyek kelas, tapi senior/teman yang lebih vokal nolak karena "biasanya nggak gini". Apa reaksi kamu?',
       options: [
-        'Argue dan paksa ide Anda karena Anda yakin lebih baik',
-        'Langsung give up dan tidak mention lagi',
-        'Respect pendapat mereka, tapi tetap present data/reasoning yang objektif untuk diskusi',
-        'Implement ide Anda sendiri tanpa persetujuan tim'
+        'Ngajak debat dan paksa mereka pakai ide kamu karena kamu yakin paling bagus',
+        'Langsung nyerah dan nggak usah kasih ide lagi kedepannya',
+        'Hargai pendapat mereka, tapi coba tunjukin data atau alasan kuat kenapa ide kamu oke',
+        'Jalanin ide kamu sendiri tanpa persetujuan kelompok'
       ],
       correctBest: 'C',
       correctWorst: 'D'
     },
     {
       id: 'TW9',
-      scenario: 'Tim Anda dapat compliment dari customer dan shift leader mau treat makan. Rekan Anda yang paling kontribusi tidak ikut shift ini. Bagaimana Anda respond?',
+      scenario: 'Kelompok kalian dapet pujian dari dosen, dan kalian mau makan-makan. Tapi teman yang paling kerja keras malah nggak bisa ikut. Apa sikapmu?',
       options: [
-        'Enjoy saja, yang penting tim yang ada sekarang',
-        'Suggest untuk sisihkan atau tunggu sampai rekan tersebut bisa join',
-        'Bilang compliment ini mostly karena rekan yang tidak ada dan kurang fair',
-        'Tidak peduli, terima treat saja'
+        'Seneng-seneng aja, yang penting gratis',
+        'Usul buat bungkusin makanan buat dia atau tunggu jadwal dia kosong',
+        'Bilang ke dosen kalau pujian itu sebenernya buat dia doang',
+        'Biasa aja, makan ya makan aja'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'TW10',
-      scenario: 'Anda dan rekan kerja punya gaya kerja yang sangat berbeda dan sering friction. Manager assign Anda berdua untuk project bersama. Apa yang Anda lakukan?',
+      scenario: 'Kamu dipasangkan sama teman yang gaya kerjanya beda banget dan sering bikin gesekan. Apa yang kamu lakukan?',
       options: [
-        'Request untuk ganti partner karena tidak compatible',
-        'Kerjakan dengan minimal communication, fokus di bagian Anda saja',
-        'Initiate diskusi di awal untuk align expectation, appreciate perbedaan, dan cari middle ground',
-        'Dominasi project dan kerjakan mayoritas sendiri agar sesuai standar Anda'
+        'Minta tukar partner karena nggak cocok',
+        'Kerja sendiri-sendiri aja tanpa komunikasi',
+        'Ajak ngobrol di awal buat samain ekspektasi dan bagi tugas yang pas',
+        'Ambil alih semua kerjaan biar hasilnya sesuai standar kamu'
       ],
       correctBest: 'C',
       correctWorst: 'A'
     },
     {
       id: 'TW11',
-      scenario: 'Rekan kerja Anda melakukan mistake di depan customer. Customer mulai marah. Apa yang Anda lakukan?',
+      scenario: 'Teman kelompokmu salah jawab pas presentasi dan diketawain kelas. Apa yang kamu lakukan?',
       options: [
-        'Ikut blame rekan kerja di depan customer',
-        'Step in, handle customer dengan profesional, protect rekan kerja dari escalation',
-        'Diam saja dan biarkan rekan kerja handle sendiri',
-        'Bilang ke customer "dia memang sering begitu"'
+        'Ikut ngetawain biar nggak malu-maluin banget',
+        'Langsung bantu lurusin jawabannya dengan sopan biar dia nggak makin drop',
+        'Diem aja dan biarkan dia nanggung malunya sendiri',
+        'Bilang ke dosen "dia emang kurang belajar Pak"'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
       id: 'TW12',
-      scenario: 'Anda diminta training barista baru, tapi Anda sendiri masih merasa belum expert. Apa yang Anda lakukan?',
+      scenario: 'Kamu diminta ngajarin mahasiswa baru, tapi kamu sendiri ngerasa belum jago-jago banget. Apa yang kamu lakukan?',
       options: [
-        'Tolak karena merasa belum qualified',
-        'Terima dan ajarkan apa yang Anda tahu dengan jujur tentang limitation Anda',
-        'Terima dan pura-pura expert meskipun tidak yakin',
-        'Terima tapi asal-asalan karena tidak confidence'
+        'Tolak karena nggak percaya diri',
+        'Terima dan ajarin apa yang kamu tahu sambil jujur kalau kamu juga masih belajar',
+        'Sok tahu aja yang penting kelihatan pinter',
+        'Ajarin asal-asalan karena merasa terpaksa'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'TW13',
-      scenario: 'Tim Anda sedang ramai, tapi ada rekan yang main HP terus. Apa yang Anda lakukan?',
+      scenario: 'Lagi sibuk-sibuknya rapat organisasi, ada satu teman malah main game terus. Apa yang kamu lakukan?',
       options: [
-        'Marah dan tegur keras di depan semua orang',
-        'Langsung lapor ke shift leader',
-        'Gentle reminder atau minta tolong dengan specific task',
-        'Ignore dan ambil beban kerjanya'
+        'Marah dan tegur dia keras-keras biar dia malu',
+        'Langsung lapor ke ketua organisasi',
+        'Ingetin pelan-pelan atau kasih dia tugas spesifik biar fokus',
+        'Biarin aja dan kamu kerjain bagian dia'
       ],
       correctBest: 'C',
       correctWorst: 'A'
     },
     {
       id: 'TW14',
-      scenario: 'Rekan kerja minta Anda cover shift-nya besok karena ada urusan mendadak. Anda sebenarnya ada rencana. Apa yang Anda lakukan?',
+      scenario: 'Teman minta kamu gantiin jadwal piketnya karena ada urusan mendadak. Kamu sebenernya punya rencana lain. Apa reaksi kamu?',
       options: [
-        'Langsung tolak tanpa tanya detail',
-        'Tanya dulu urgency-nya, pertimbangkan, lalu decide dengan jujur',
-        'Terima meskipun tidak ikhlas',
-        'Terima tapi minta sesuatu sebagai balas jasa'
+        'Langsung nolak tanpa nanya urusannya apa',
+        'Tanya seberapa mendadak urusannya, terus pikirin lagi sebelum jawab',
+        'Terima tapi sambil ngedumel sepanjang hari',
+        'Terima tapi minta dia bayarin makan sebagai imbalan'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'TW15',
-      scenario: 'Ada miscommunication yang menyebabkan order salah. Customer marah dan tidak jelas siapa yang salah. Apa yang Anda lakukan?',
+      scenario: 'Ada miskomunikasi yang bikin tugas kelompok salah total. Nggak jelas siapa yang salah. Apa yang kamu lakukan?',
       options: [
-        'Cari tahu siapa yang salah dulu sebelum handle customer',
-        'Focus resolve issue customer dulu, baru investigate internally',
-        'Blame sistem POS yang confusing',
-        'Minta customer komplain langsung ke yang salah'
+        'Cari tahu siapa yang salah dulu sebelum benerin tugasnya',
+        'Fokus benerin tugasnya dulu bareng-bareng, baru nanti evaluasi kenapa bisa salah',
+        'Salahin sistem atau instruksi dosen yang nggak jelas',
+        'Suruh teman yang paling "mencurigakan" buat nanggung jawab'
       ],
       correctBest: 'B',
       correctWorst: 'D'
@@ -369,180 +369,180 @@ export const sjtQuestionsData = {
   integrity: [
     {
       id: 'INT1',
-      scenario: 'Anda tidak sengaja break gelas saat closing dan tidak ada yang lihat. Area sudah gelap dan Anda lelah. Apa yang Anda lakukan?',
+      scenario: 'Kamu nggak sengaja numpahin minuman ke laptop teman pas nggak ada orang. Apa yang kamu lakukan?',
       options: [
-        'Buang pecahannya dan tidak lapor karena tidak ada yang tahu',
-        'Bersihkan dengan baik, lapor dan catat di logbook untuk transparency',
-        'Bersihkan tapi tidak lapor karena toh sudah dibersihkan',
-        'Tinggalkan begitu saja, shift berikutnya yang akan notice dan handle'
+        'Lap seadanya terus kabur karena takut disuruh ganti',
+        'Langsung chat/temui orangnya, jujur, dan tawarin buat servis/ganti',
+        'Bersihin aja terus pura-pura nggak tahu apa-apa',
+        'Tinggalin gitu aja, biar dia ngira rusak sendiri'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'INT2',
-      scenario: 'Customer bayar dan Anda salah hitung, kelebihan kasih kembalian 50K. Customer sudah pergi dan tidak notice. Apa yang Anda lakukan?',
+      scenario: 'Pas lagi jualan merchandise kampus, kamu sadar ada uang lebih 50rb di dompet iuran. Apa yang kamu lakukan?',
       options: [
-        'Simpan uang tersebut untuk diri sendiri sebagai "rejeki"',
-        'Masukkan ke cash register dan laporkan sebagai overpayment error',
-        'Diamkan saja, nanti pas closing akan ketahuan selisihnya',
-        'Bagi dengan rekan kerja sebagai "bonus"'
+        'Kantongin sendiri buat jajan karena "rezeki"',
+        'Lapor ke bendahara dan catat sebagai uang lebih yang nggak jelas sumbernya',
+        'Diemin aja, nanti pas rekap juga ketahuan',
+        'Bagi-bagi ke teman panitia lain buat jajan bareng'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
       id: 'INT3',
-      scenario: 'Shift leader tidak ada, dan ada stock pastry yang akan expired hari ini tapi belum terjual. Anda lapar. Apa yang Anda lakukan?',
+      scenario: 'Ketua organisasi nggak ada, dan ada sisa konsumsi rapat yang lumayan banyak. Kamu laper banget. Apa yang kamu lakukan?',
       options: [
-        'Makan pastry tersebut karena toh akan dibuang juga',
-        'Tunggu shift leader approve dulu atau catat sebagai staff meal dengan prosedur yang benar',
-        'Jual dengan diskon besar ke customer agar tidak waste',
-        'Bawa pulang tanpa sepengetahuan siapa-siapa'
+        'Makan aja karena toh bakal dibuang juga',
+        'Tanya ketua dulu atau catat kalau kamu ambil buat transparansi',
+        'Jual murah ke teman lain buat nambah uang kas',
+        'Bawa pulang diem-diem tanpa bilang siapa-siapa'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'INT4',
-      scenario: 'Teman Anda datang sebagai customer dan minta discount "teman". Tidak ada policy discount untuk teman staff. Apa yang Anda lakukan?',
+      scenario: 'Teman dekatmu minta kamu "titip absen" (absenin dia padahal nggak masuk). Apa yang kamu lakukan?',
       options: [
-        'Kasih discount karena teman dan tidak akan ketahuan',
-        'Explain dengan baik bahwa tidak ada policy discount dan tawarkan loyalty program yang tersedia',
-        'Kasih discount tapi suruh teman bayar cash agar tidak tercatat',
-        'Tolak dengan kasar agar teman tidak minta lagi'
+        'Absenin aja karena dia teman dekat dan nggak bakal ketahuan',
+        'Jelasin baik-baik kalau itu melanggar aturan dan tawarin buat kasih catatan materi aja',
+        'Absenin tapi suruh dia bayarin makan siang',
+        'Tolak dengan kasar biar dia nggak berani minta lagi'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'INT5',
-      scenario: 'Anda lihat rekan kerja ambil uang dari tip jar untuk keperluan pribadi (dengan niat akan kembalikan). Apa yang Anda lakukan?',
+      scenario: 'Kamu lihat teman ambil uang kas organisasi buat urusan pribadi (katanya mau diganti nanti). Apa yang kamu lakukan?',
       options: [
-        'Ignore karena bukan urusan Anda',
-        'Langsung confront dan minta kembalikan sekarang',
-        'Bicara empat mata secara pribadi dan remind tentang policy',
-        'Langsung lapor ke manager tanpa konfirmasi ke orangnya'
+        'Cuek aja karena dia bilang mau dibalikin',
+        'Langsung marahin dia di depan teman-teman lain',
+        'Ngobrol berdua, ingetin kalau itu nggak bener, dan suruh balikin',
+        'Langsung lapor ketua tanpa tanya dulu ke orangnya'
       ],
       correctBest: 'C',
       correctWorst: 'A'
     },
     {
       id: 'INT6',
-      scenario: 'Customer tinggalkan laptop di meja dan pergi. Anda lihat ada uang cash 200K di atas meja. Apa yang Anda lakukan?',
+      scenario: 'Ada dompet ketinggalan di kelas. Isinya ada uang banyak tapi nggak ada identitasnya. Apa yang kamu lakukan?',
       options: [
-        'Ambil uangnya karena customer ceroboh dan itu "pelajaran" untuk mereka',
-        'Simpan di tempat aman dan tunggu customer kembali, atau hubungi jika ada contact',
-        'Kasih ke rekan kerja untuk handle',
-        'Simpan dulu untuk diri sendiri, jika customer komplain baru kembalikan'
+        'Ambil uangnya karena dia ceroboh, hitung-hitung buat "pelajaran"',
+        'Serahin ke bagian info kampus atau satpam agar aman',
+        'Kasih ke teman lain biar dia yang urus',
+        'Simpan dulu, kalau dalam seminggu nggak ada yang nyari baru kamu pake'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
       id: 'INT7',
-      scenario: 'Anda sakit dan seharusnya tidak masuk kerja (bisa menular ke customer/staff), tapi shift sedang kekurangan orang. Manager bilang "terserah kamu, tapi akan sangat membantu kalau kamu bisa masuk". Apa yang Anda lakukan?',
+      scenario: 'Kamu lagi nggak enak badan dan harusnya istirahat, tapi kelompokmu lagi butuh orang banget. Apa yang kamu lakukan?',
       options: [
-        'Tetap tidak masuk demi kesehatan bersama dan minta maaf',
-        'Masuk kerja meski sakit karena merasa bertanggung jawab',
-        'Masuk kerja tapi setengah hati dan sering istirahat',
-        'Masuk kerja dan tutup-tutupi sakitnya agar tidak ketahuan'
+        'Tetap nggak masuk demi kesehatan bersama tapi jelasin kondisinya',
+        'Paksain masuk meski sakit karena nggak enak sama teman',
+        'Masuk kerja tapi cuma tiduran aja di sana',
+        'Masuk tapi diem-diem aja biar nggak disuruh kerja berat'
       ],
       correctBest: 'A',
       correctWorst: 'D'
     },
     {
       id: 'INT8',
-      scenario: 'Ada customer yang sangat rude dan toxic, tapi Anda notice dia tinggalkan dompet. Apa yang Anda lakukan?',
+      scenario: 'Ada orang yang pernah jahat sama kamu ketinggalan HP-nya. Apa yang kamu lakukan?',
       options: [
-        'Ignore dan biarkan dia rugi sebagai karma',
-        'Kejar dan kembalikan dompet dengan profesional meskipun dia rude',
-        'Cek isi dompet dulu baru putuskan mau kembalikan atau tidak',
-        'Kasih ke rekan kerja lain yang lebih sabar untuk handle'
+        'Biarin aja biar dia susah sebagai karma',
+        'Amankan HP-nya dan balikin lewat perantara atau langsung secara profesional',
+        'Cek isi HP-nya dulu baru putusin mau dibalikin atau nggak',
+        'Kasih ke teman lain biar kamu nggak perlu interaksi sama dia'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
       id: 'INT9',
-      scenario: 'Anda tidak sengaja pakai bahan yang hampir expired (tapi masih aman) untuk order customer tanpa sadar. Anda baru realize setelah customer pergi. Apa yang Anda lakukan?',
+      scenario: 'Kamu nggak sengaja nyontek ide tugas teman tanpa izin karena kepepet. Kamu baru sadar pas tugas sudah dikumpul. Apa yang kamu lakukan?',
       options: [
-        'Tidak apa-apa karena masih dalam tanggal aman dan customer tidak komplain',
-        'Hubungi customer jika memungkinkan, inform dengan jujur, dan tawarkan remake atau refund',
-        'Tidak perlu inform karena akan bikin masalah yang sebenarnya tidak perlu',
-        'Catat untuk diri sendiri dan lebih hati-hati next time'
+        'Diem aja karena nilainya sudah keluar dan nggak ada yang komplain',
+        'Chat temenmu, jujur ngaku salah, dan tawarin buat revisi ke dosen kalau perlu',
+        'Nggak usah jujur karena malah bikin masalah makin panjang',
+        'Catat buat diri sendiri aja biar nggak ngulangin lagi'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'INT10',
-      scenario: 'Social media policy melarang post internal operasional, tapi Anda ambil foto aesthetic di balik counter untuk Instagram story. Apa yang Anda lakukan?',
+      scenario: 'Aturan kampus melarang posting soal internal organisasi, tapi kamu punya foto estetik di sana. Apa yang kamu lakukan?',
       options: [
-        'Post saja karena foto bagus dan akan bagus untuk personal branding',
-        'Tidak post karena respect policy, atau minta izin dulu ke management',
-        'Post tapi blur atau crop bagian yang sensitive',
-        'Post dan delete cepat jika ada yang komplain'
+        'Posting aja karena fotonya bagus buat feed Instagram',
+        'Nggak jadi posting demi hargai aturan, atau minta izin dulu ke pengurus',
+        'Posting tapi di-crop bagian yang sensitif',
+        'Posting terus langsung hapus sebelum ada yang liat'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
       id: 'INT11',
-      scenario: 'Anda notice register kelebihan 100K saat closing, tapi tidak ada yang tahu. Apa yang Anda lakukan?',
+      scenario: 'Pas lagi bayar di kantin, penjualnya kasih kembalian lebih 10rb. Apa yang kamu lakukan?',
       options: [
-        'Simpan untuk diri sendiri karena tidak ada yang tahu',
-        'Lapor dan catat sebagai overage dengan transparant',
-        'Bagi dengan tim sebagai "bonus"',
-        'Simpan untuk kembalikan jika suatu hari ada shortage'
+        'Simpan aja buat nambah uang jajan',
+        'Langsung balikin dan kasih tahu kalau kembaliannya lebih',
+        'Tanya teman sebelah enaknya dikantongin atau dibalikin',
+        'Ambil uangnya tapi nanti kasih ke pengamen'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
       id: 'INT12',
-      scenario: 'Manager minta Anda adjust attendance record teman yang telat agar tidak kena warning. Apa yang Anda lakukan?',
+      scenario: 'Ketua kelompok minta kamu manipulasi data presensi teman yang sering bolos biar kelompok nggak dapet sanksi. Apa yang kamu lakukan?',
       options: [
-        'Lakukan karena manager yang minta',
-        'Tolak dengan sopan dan explain kenapa itu tidak sesuai policy',
-        'Lakukan tapi catat untuk diri sendiri',
-        'Lakukan tapi lapor ke HR diam-diam'
+        'Lakuin aja karena disuruh ketua',
+        'Tolak dengan sopan dan jelasin risikonya kalau ketahuan',
+        'Lakuin tapi kasih tahu teman itu kalau kamu terpaksa',
+        'Lakuin tapi lapor dosen diem-diem'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
       id: 'INT13',
-      scenario: 'Ada promo yang sudah expired tapi customer tidak tahu dan minta applied. System tidak auto-block. Apa yang Anda lakukan?',
+      scenario: 'Ada info diskon buku yang harusnya sudah habis kemarin, tapi penjualnya nggak sadar dan tetap kasih harga murah. Apa yang kamu lakukan?',
       options: [
-        'Inform dengan jujur bahwa promo sudah expired',
-        'Apply saja biar customer senang',
-        'Apply tapi bilang "jangan bilang-bilang ya"',
-        'Bilang system error jadi tidak bisa apply'
+        'Ingatin penjualnya kalau promonya sudah habis',
+        'Beli aja mumpung murah dan nggak ketahuan',
+        'Beli banyak terus dijual lagi ke teman lain dengan harga normal',
+        'Bilang ke teman-teman buat buru-buru beli sebelum penjualnya sadar'
       ],
       correctBest: 'A',
       correctWorst: 'C'
     },
     {
       id: 'INT14',
-      scenario: 'Anda accidentally charge customer untuk extra shot yang tidak mereka pesan. Customer sudah pulang. Apa yang Anda lakukan?',
+      scenario: 'Kamu nggak sengaja tagih iuran ke teman lebih banyak dari yang seharusnya. Temanmu sudah bayar tanpa protes. Apa yang kamu lakukan?',
       options: [
-        'Tidak apa-apa, selisih kecil saja',
-        'Masukkan selisihnya ke donation box atau catat untuk refund next visit',
-        'Simpan selisihnya',
-        'Anggap sebagai tip'
+        'Biarin aja, selisihnya nggak seberapa',
+        'Segera balikin selisihnya atau kasih tahu kalau itu buat tabungan iuran berikutnya',
+        'Simpan selisihnya buat tabungan pribadi',
+        'Anggap itu sebagai upah kamu sudah capek nagihin'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'INT15',
-      scenario: 'Manager minta Anda bohong ke customer bahwa bahan organic padahal bukan. Apa yang Anda lakukan?',
+      scenario: 'Ketua organisasi minta kamu bohong ke pihak kampus soal penggunaan dana biar cairnya cepat. Apa yang kamu lakukan?',
       options: [
-        'Lakukan karena manager yang instruksikan',
-        'Tolak dan discuss dengan manager tentang implikasi etis dan legal',
-        'Lakukan tapi merasa bersalah',
-        'Lakukan tapi inform customer secara pribadi setelahnya'
+        'Lakuin aja demi kepentingan organisasi',
+        'Tolak dan diskusikan cara lain yang lebih jujur tapi tetap efektif',
+        'Lakuin tapi dalam hati merasa berdosa',
+        'Lakuin tapi kasih tahu orang lain kalau ini ide ketua'
       ],
       correctBest: 'B',
       correctWorst: 'A'
@@ -552,180 +552,180 @@ export const sjtQuestionsData = {
   stressManagement: [
     {
       id: 'SM1',
-      scenario: 'Rush hour dengan 15 customer antri, lalu tiba-tiba ada 2 order komplain bersamaan. Anda mulai overwhelmed. Apa yang Anda lakukan?',
+      scenario: 'Lagi banyak tugas, terus tiba-tiba ada pengumuman ujian mendadak. Kamu mulai panik. Apa yang kamu lakukan?',
       options: [
-        'Panic dan freeze, tidak tahu harus handle yang mana dulu',
-        'Take a deep breath, prioritize, handle satu per satu dengan calm',
-        'Marah ke customer karena terlalu demanding',
-        'Tinggalkan semua dan istirahat dulu untuk calm down'
+        'Panik dan bengong, nggak tahu harus ngerjain yang mana dulu',
+        'Tarik napas, bikin daftar prioritas, dan cicil satu per satu dengan tenang',
+        'Ngomel-ngomel di media sosial soal sistem kampus',
+        'Tinggalin semua dan tidur atau main game biar nggak stres'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'SM2',
-      scenario: 'Customer berteriak dan memarahi Anda di depan customer lain karena minumannya salah (meskipun bukan kesalahan Anda). Apa yang Anda lakukan?',
+      scenario: 'Ada teman yang marahin kamu di depan umum karena salah paham soal tugas. Apa yang kamu lakukan?',
       options: [
-        'Balas dengan nada tinggi untuk defend diri Anda',
-        'Tetap calm, apologize untuk situasi, dan resolve issue secara profesional',
-        'Cry atau emotional breakdown di depan customer',
-        'Walk away dan suruh rekan kerja lain yang handle'
+        'Balas teriak biar dia nggak makin ngelunjak',
+        'Tetap tenang, dengerin dia, terus ajak bicara berdua buat beresin masalah',
+        'Langsung nangis atau emosi meledak di situ juga',
+        'Langsung cabut gitu aja tanpa kata-kata'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'SM3',
-      scenario: 'Anda dapat feedback keras dari shift leader di tengah shift tentang performance. Anda merasa unfair dan emosi. Apa yang Anda lakukan?',
+      scenario: 'Kamu dapet kritik pedas pas lagi presentasi di depan kelas. Kamu ngerasa itu nggak adil. Apa yang kamu lakukan?',
       options: [
-        'Argue dengan shift leader saat itu juga di depan semua orang',
-        'Simpan emosi, selesaikan shift dengan profesional, diskusikan di waktu yang tepat',
-        'Nangis atau sulking sepanjang shift',
-        'Quit on the spot karena merasa tidak dihargai'
+        'Debat balik saat itu juga biar semua orang tahu kamu nggak salah',
+        'Tahan emosi, dengerin dulu, terus diskusikan secara objektif pas sudah tenang',
+        'Cemberut atau baper sepanjang sisa jam pelajaran',
+        'Langsung pengen keluar kelas karena merasa dipermalukan'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'SM4',
-      scenario: 'Ada masalah teknis (POS error, mesin rusak) dan semua serba salah di shift Anda. Customer mulai impatient. Apa yang Anda lakukan?',
+      scenario: 'Ada masalah teknis (laptop rusak, internet mati) pas lagi ujian online. Apa yang kamu lakukan?',
       options: [
-        'Keep composure, communicate clearly ke customer, tawarkan solusi alternatif',
-        'Panic dan bilang "saya tidak tahu harus bagaimana"',
-        'Blame teknologi di depan customer dan ikut frustrated',
-        'Close toko sementara tanpa info jelas ke customer'
+        'Tetap tenang, komunikasikan ke pengawas, dan cari solusi alternatif secepatnya',
+        'Panik dan bilang "saya nggak tahu harus gimana" berulang kali',
+        'Salahin teknologi dan nangis karena takut nggak lulus',
+        'Tutup ujiannya gitu aja tanpa info apa-apa'
       ],
       correctBest: 'A',
       correctWorst: 'D'
     },
     {
       id: 'SM5',
-      scenario: 'Anda punya masalah pribadi berat yang membuat mood Anda sangat down hari ini, tapi harus tetap kerja. Apa yang Anda lakukan?',
+      scenario: 'Kamu lagi ada masalah pribadi yang berat banget, tapi harus tetap ikut kegiatan kampus. Apa yang kamu lakukan?',
       options: [
-        'Bawa emosi negatif ke pekerjaan dan tidak hide it',
-        'Beri effort terbaik maintain profesionalisme meski struggling inside',
-        'Cerita masalah pribadi ke setiap customer untuk venting',
-        'Kerja dengan asal-asalan karena tidak mood'
+        'Bawa emosi negatif ke semua orang dan nggak coba nutupin',
+        'Berusaha profesional dan tetap ramah walau dalam hati lagi sedih',
+        'Curhat ke setiap orang yang kamu temuin biar lega',
+        'Kerja asal-asalan karena mood lagi hancur'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'SM6',
-      scenario: 'Anda salah buat 5 minuman berturut-turut dan shift leader mulai notice. Anda merasa pressure dan confident mulai turun. Apa yang Anda lakukan?',
+      scenario: 'Kamu salah jawab pertanyaan dosen berkali-kali dan seisi kelas mulai ngeliatin. Kamu ngerasa malu banget. Apa yang kamu lakukan?',
       options: [
-        'Give up dan bilang "saya tidak bisa, saya butuh break"',
-        'Take a moment, reset mentally, focus, dan approach next order dengan lebih hati-hati',
-        'Makin panic dan mistakes makin banyak',
-        'Blame tools atau rekan kerja untuk cover kesalahan Anda'
+        'Nyerah dan bilang "saya nggak bisa belajar materi ini"',
+        'Tenangin diri, coba fokus lagi, dan jadikan kesalahan itu buat belajar',
+        'Makin panik dan akhirnya malah makin banyak salah',
+        'Salahin materi yang terlalu susah atau dosen yang nggak jelas ngajarnya'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'SM7',
-      scenario: 'Customer extremely demanding dan terus request adjustment berkali-kali. Anda sudah mulai kesal. Apa yang Anda lakukan?',
+      scenario: 'Ketua kelompokmu banyak maunya dan revisi terus tugas kamu. Kamu sudah mulai kesel. Apa yang kamu lakukan?',
       options: [
-        'Tunjukkan rasa kesal melalui body language atau tone',
-        'Maintain patience, fulfill request dengan positivity, set clear boundary jika perlu',
-        'Sarcastically bilang "ada lagi yang mau diganti?"',
-        'Tolak request berikutnya dengan alasan "sudah terlalu banyak"'
+        'Tunjukin muka bete atau jawab seadanya tiap dia minta revisi',
+        'Sabar, kerjain maunya dia, tapi tetapkan batasan kalau sudah keterlaluan',
+        'Sindir-sindir dia di grup lain atau story sosmed',
+        'Tolak revisi berikutnya dengan alasan "sudah cukup bagus"'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'SM8',
-      scenario: 'Anda baru dapat kabar buruk melalui phone saat shift, dan Anda sangat emotional. Masih ada 2 jam lagi shift. Apa yang Anda lakukan?',
+      scenario: 'Kamu baru dapet kabar buruk pas lagi rapat organisasi, dan kamu pengen nangis. Apa yang kamu lakukan?',
       options: [
-        'Langsung pulang tanpa izin karena emergency',
-        'Inform shift leader tentang situasi, minta izin atau adjustment jika memungkinkan',
-        'Tetap kerja tapi dengan mood yang sangat terlihat buruk',
-        'Mengunci diri di toilet dan menangis lama'
+        'Langsung pulang tanpa izin karena emosi nggak stabil',
+        'Bilang ke pimpinan rapat kalau kamu ada urusan mendadak dan butuh waktu sebentar',
+        'Tetap ikut rapat tapi mukanya ditekuk terus',
+        'Nangis di depan semua orang pas rapat lagi jalan'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'SM9',
-      scenario: 'Equipment malfunction membuat Anda harus work extra hard secara manual. Shift terasa 2x lebih berat. Apa yang Anda lakukan?',
+      scenario: 'Sistem pendaftaran kuliah error dan kamu harus antre manual berjam-jam. Apa yang kamu lakukan?',
       options: [
-        'Komplain terus sepanjang shift ke siapa saja',
-        'Accept situasi, adjust workflow, dan maintain quality dengan effort ekstra',
-        'Decrease quality untuk maintain kecepatan',
-        'Marah ke management karena equipment tidak proper'
+        'Ngomel-ngomel sepanjang antrean ke siapa aja',
+        'Terima situasinya, manfaatin waktu buat hal lain sambil nunggu dengan sabar',
+        'Coba nyerobot antrean biar cepat kelar',
+        'Marah-marah ke petugas di sana karena sistemnya jelek'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'SM10',
-      scenario: 'Anda dituduh melakukan kesalahan yang sebenarnya bukan Anda yang lakukan, dan situasinya cukup serius. Apa yang Anda lakukan?',
+      scenario: 'Kamu dituduh ngelakuin kesalahan yang sebenernya bukan kamu yang buat. Apa yang kamu lakukan?',
       options: [
-        'Marah dan defensive, refuse dikaitkan dengan isu tersebut',
-        'Tetap calm, klarifikasi dengan fakta, dan willing untuk investigate bersama',
-        'Panic dan langsung bilang siapa yang salah meski tidak yakin',
-        'Diam saja dan biarkan situasi berkembang sendiri'
+        'Marah dan langsung nolak keras tanpa mau dengerin',
+        'Tetap tenang, jelasin faktanya, dan tawarin buat cari tahu bareng-bareng',
+        'Panik dan langsung nunjuk orang lain buat jadi kambing hitam',
+        'Diem aja dan pasrah dituduh'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'SM11',
-      scenario: '3 customer komplain bersamaan tentang waiting time padahal Anda sudah maksimal. Anda mulai stress. Apa yang Anda lakukan?',
+      scenario: 'Beberapa teman protes soal pembagian tugas kamu sebagai ketua. Kamu mulai merasa tertekan. Apa yang kamu lakukan?',
       options: [
-        'Snap dan bilang "kalau tidak mau tunggu ya jangan order"',
-        'Apologize, give realistic estimate, dan inform progress',
-        'Ignore customer dan terus kerja tanpa communicate',
-        'Cry karena merasa overwhelmed'
+        'Langsung ngegas dan bilang "kalau nggak suka ya atur sendiri"',
+        'Minta maaf kalau kurang oke, dengerin masukannya, dan kasih estimasi perbaikan',
+        'Cuekin protes mereka dan terus jalan aja',
+        'Nangis karena merasa nggak dihargai kerjanya'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
       id: 'SM12',
-      scenario: 'Shift leader micromanage Anda sepanjang shift dan membuat Anda stress. Apa yang Anda lakukan?',
+      scenario: 'Ketua organisasi ngatur-ngatur kamu banget sampai kamu stres. Apa yang kamu lakukan?',
       options: [
-        'Confront shift leader di tengah shift',
-        'Tetap professional, selesaikan shift, lalu discuss secara pribadi',
-        'Passive aggressive dengan deliberately kerja lambat',
-        'Quit on the spot'
+        'Langsung konfrontasi dia pas lagi rame-rame',
+        'Tetap profesional, selesaikan tugas, baru nanti diskusikan berdua',
+        'Pasif-agresif dengan sengaja ngerjainnya lama-lama',
+        'Langsung keluar dari organisasi saat itu juga'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'SM13',
-      scenario: 'Anda accidentally spill hot coffee ke tangan Anda saat rush hour. Anda kesakitan. Apa yang Anda lakukan?',
+      scenario: 'Kamu nggak sengaja tumpahin air ke tugas fisik yang mau dikumpulin 5 menit lagi. Apa yang kamu lakukan?',
       options: [
-        'Ignore pain dan terus kerja',
-        'Handle first aid quickly, inform team, then continue with caution',
-        'Dramatic reaction dan stop kerja completely',
-        'Blame equipment atau situasi dengan loud'
+        'Abaikan rasa panik dan kumpulin apa adanya',
+        'Coba keringin secepat mungkin, lapor ke dosen soal kejadiannya, dan minta solusi',
+        'Emosi dan sobek tugasnya sekalian karena sudah rusak',
+        'Salahin meja yang basah atau botol minum yang bocor'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'SM14',
-      scenario: 'Manager tiba-tiba datang saat shift Anda sedang chaos. Anda merasa judged. Apa yang Anda lakukan?',
+      scenario: 'Dosen killer tiba-tiba masuk ke kelas pas kalian lagi ribut banget. Kamu ngerasa takut. Apa yang kamu lakukan?',
       options: [
-        'Panic dan performance makin drop',
-        'Stay focused, handle situation professionally, explain calmly jika ditanya',
-        'Defensive dan bilang "ini bukan salah saya"',
-        'Pretend everything is fine meskipun clearly chaos'
+        'Panik dan makin bikin suasana jadi aneh',
+        'Tetap tenang, langsung rapihin tempat duduk, dan fokus ke materi',
+        'Defensif dan bilang "tadi itu bukan saya yang ribut"',
+        'Pura-pura nggak ada apa-apa padahal kelas masih berantakan'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
       id: 'SM15',
-      scenario: 'Anda double-booked dan harus handle 2 tasks penting bersamaan. Apa yang Anda lakukan?',
+      scenario: 'Kamu punya dua tugas besar yang deadline-nya barengan besok pagi. Apa yang kamu lakukan?',
       options: [
-        'Panic dan tidak tahu mulai dari mana',
-        'Quick assess priority, delegate jika bisa, communicate timeline',
-        'Try to do both simultaneously dan hasil keduanya buruk',
-        'Give up one task completely'
+        'Panik dan akhirnya nggak ngerjain dua-duanya',
+        'Cek mana yang lebih penting/susah, atur waktu, dan minta bantuan kalau perlu',
+        'Coba kerjain dua-duanya barengan tapi hasilnya malah berantakan',
+        'Nyerah sama satu tugas dan nggak dikumpulin'
       ],
       correctBest: 'B',
       correctWorst: 'D'
@@ -735,180 +735,180 @@ export const sjtQuestionsData = {
   initiative: [
     {
       id: 'INI1',
-      scenario: 'Anda notice bahwa banyak customer bertanya tentang WiFi password, tapi tidak ada signage yang jelas. Apa yang Anda lakukan?',
+      scenario: 'Kamu notice banyak teman nanya soal password WiFi kampus tapi nggak ada pengumuman jelas. Apa yang kamu lakukan?',
       options: [
-        'Jawab setiap customer yang tanya, tidak lebih',
-        'Suggest ke management untuk buat signage WiFi yang visible',
-        'Tidak peduli karena bukan job desk Anda',
-        'Complain ke rekan kerja bahwa customer annoying'
+        'Jawab aja tiap ada yang nanya, nggak lebih',
+        'Usul ke pengurus kelas/kampus buat bikin stiker info WiFi yang kelihatan',
+        'Bukan urusan kamu, biarin aja mereka nanya terus',
+        'Ngomel ke teman-teman karena mereka nggak tahu hal sepele'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'INI2',
-      scenario: 'Shift leader sedang tidak ada dan tiba-tiba ada situasi yang perlu quick decision. Anda staff paling senior di shift ini. Apa yang Anda lakukan?',
+      scenario: 'Ketua kelompok lagi nggak bisa dihubungi dan ada keputusan mendadak yang harus diambil. Kamu yang paling senior. Apa yang kamu lakukan?',
       options: [
-        'Tidak mengambil keputusan apapun dan tunggu shift leader kembali',
-        'Make best judgment call, take action, inform shift leader setelahnya',
-        'Call shift leader berulang kali sampai dijawab',
-        'Suruh staff lain yang decide karena Anda tidak mau tanggung jawab'
+        'Diem aja dan tunggu sampai ketua balik',
+        'Ambil keputusan terbaik, lakuin, terus baru lapor ketua nanti',
+        'Telepon ketua terus-menerus sampai diangkat walau dia lagi sibuk',
+        'Suruh teman lain yang mutusin biar kamu nggak tanggung jawab'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'INI3',
-      scenario: 'Anda notice stock bahan mulai menipis padahal belum scheduled untuk restock. Apa yang Anda lakukan?',
+      scenario: 'Kamu perhatiin stok kertas di ruang organisasi mulai habis padahal belum jadwalnya belanja. Apa yang kamu lakukan?',
       options: [
-        'Biarkan dan tunggu sampai habis baru report',
-        'Proaktif inform shift leader atau pic inventory untuk antisipasi',
-        'Tidak peduli karena itu tanggung jawab orang lain',
-        'Tunggu shift leader notice sendiri'
+        'Biarin aja sampai habis beneran baru laporan',
+        'Inisiatif lapor ke bagian perlengkapan biar bisa disiapin dari sekarang',
+        'Bukan urusan kamu, itu tugas divisi lain',
+        'Tunggu ada yang komplain baru kamu bergerak'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'INI4',
-      scenario: 'Anda punya ide untuk improve workflow yang bisa save time, tapi belum pernah discuss dengan siapa-siapa. Apa yang Anda lakukan?',
+      scenario: 'Kamu punya ide cara ngerjain tugas yang lebih cepat tapi belum pernah kamu bahas sama siapa-siapa. Apa yang kamu lakukan?',
       options: [
-        'Langsung implement ide Anda tanpa izin',
-        'Present ide ke shift leader atau team meeting dengan reasoning yang jelas',
-        'Simpan ide untuk diri sendiri agar tetap terlihat paling efisien',
-        'Mention casually tapi tidak serius push untuk implementasi'
+        'Langsung jalanin sendiri aja tanpa izin kelompok',
+        'Presentasiin ide kamu ke teman-teman dengan alasan kenapa ini bagus',
+        'Simpan sendiri idenya biar kamu yang paling cepat selesai',
+        'Cuma kasih tahu sepintas tapi nggak serius buat jalanin'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'INI5',
-      scenario: 'Customer reguler yang biasanya order Latte tiba-tiba coba Cappuccino dan terlihat tidak puas. Apa yang Anda lakukan?',
+      scenario: 'Teman yang biasanya ambisius tiba-tiba dapet nilai jelek dan kelihatan stres. Apa yang kamu lakukan?',
       options: [
-        'Tidak peduli, customer yang harus tahu apa yang mereka suka',
-        'Proaktif tanya feedback, dan suggest back to Latte atau alternatif lain',
-        'Tunggu customer komplain baru action',
-        'Bilang "makanya pesan Latte lagi aja"'
+        'Biarin aja, dia pasti bisa handle sendiri',
+        'Ajak ngobrol, tanya apa yang bikin susah, dan tawarin buat belajar bareng',
+        'Tunggu dia curhat baru kamu dengerin',
+        'Bilang "makanya jangan terlalu ambisius dong"'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'INI6',
-      scenario: 'Mesin grinder mulai terdengar aneh meski masih berfungsi. Anda khawatir akan rusak total. Apa yang Anda lakukan?',
+      scenario: 'Printer di perpustakaan mulai bunyi aneh walau masih bisa dipakai. Apa yang kamu lakukan?',
       options: [
-        'Ignore sampai benar-benar rusak baru report',
-        'Langsung report ke shift leader untuk preventive maintenance',
-        'Coba perbaiki sendiri meski tidak punya expertise',
-        'Tunggu rekan kerja lain yang notice dan report'
+        'Cuekin sampai bener-bener rusak pas giliran orang lain pakai',
+        'Lapor ke petugas perpus biar bisa dicek sebelum makin parah',
+        'Coba benerin sendiri meski nggak ngerti apa-apa',
+        'Tunggu teman lain aja yang lapor'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
       id: 'INI7',
-      scenario: 'Tidak ada yang assign untuk training staff baru, dan Anda notice dia terlihat lost. Apa yang Anda lakukan?',
+      scenario: 'Nggak ada yang ditugasin buat bantuin mahasiswa baru, dan kamu lihat dia kebingungan nyari kelas. Apa yang kamu lakukan?',
       options: [
-        'Bukan tanggung jawab Anda, biarkan dia figure out sendiri',
-        'Proaktif approach dan guide meski tidak diminta',
-        'Wait until diminta tolong baru bantu',
-        'Complain ke shift leader bahwa tidak ada yang training staff baru'
+        'Bukan urusan kamu, biarin dia cari sendiri biar mandiri',
+        'Tawarin bantuan dan anterin dia ke kelasnya',
+        'Tunggu dia nanya baru kamu bantu',
+        'Komplain ke panitia ospek kenapa nggak ada yang jagain'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
       id: 'INI8',
-      scenario: 'Anda notice customer area sangat berantakan (tissue berserakan, piring kotor banyak) tapi bukan tanggung jawab shift Anda saat ini. Apa yang Anda lakukan?',
+      scenario: 'Kamu lihat area belajar di kelas berantakan banget (banyak sampah kertas) padahal bukan jadwal piket kamu. Apa yang kamu lakukan?',
       options: [
-        'Biarkan karena ada PIC khusus untuk area tersebut',
-        'Ambil inisiatif bersihkan karena berpengaruh ke customer experience',
-        'Foto dan kirim ke grup untuk "expose" siapa yang tidak kerja',
-        'Tunggu sampai ada komplain customer baru action'
+        'Biarin aja, kan nanti ada yang piket',
+        'Ambil inisiatif buat bersihin karena bikin nggak nyaman belajar',
+        'Foto terus kirim ke grup kelas buat nyindir siapa yang nyampah',
+        'Tunggu sampai dosen marah baru dibersihin'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'INI9',
-      scenario: 'Menu board ada typo yang Anda notice, dan sudah beberapa customer bingung karena itu. Apa yang Anda lakukan?',
+      scenario: 'Di papan pengumuman ada salah info soal jadwal ujian yang bisa bikin teman-teman salah jadwal. Apa yang kamu lakukan?',
       options: [
-        'Tidak peduli, bukan job desk Anda',
-        'Langsung inform dan suggest untuk koreksi segera',
-        'Tunggu customer komplain baru report',
-        'Diam-diam perbaiki sendiri tanpa inform siapa-siapa'
+        'Diem aja, yang penting kamu tahu yang bener',
+        'Langsung kasih tahu pengurus atau dosen biar segera dikoreksi',
+        'Tunggu ada yang salah jadwal baru laporan',
+        'Benerin sendiri diam-diam tanpa kasih tahu siapa-siapa'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
       id: 'INI10',
-      scenario: 'Anda punya waktu luang 15 menit saat shift sepi. Apa yang Anda lakukan?',
+      scenario: 'Kamu punya waktu kosong 15 menit pas nunggu dosen datang. Apa yang kamu lakukan?',
       options: [
-        'Main phone dan istirahat',
-        'Cari pekerjaan produktif: restock, prep, cleaning, atau improve area kerja',
-        'Ngobrol santai dengan rekan kerja',
-        'Keluar sebentar untuk break tidak resmi'
+        'Main HP atau tidur aja',
+        'Cari kegiatan positif: baca materi hari ini, cicil tugas, atau rapihin meja',
+        'Cuma ngobrol nggak jelas sama teman sebelah',
+        'Keluar kelas dan telat masuk pas dosennya sudah mulai'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'INI11',
-      scenario: 'Anda notice ada new product dari competitor yang interesting. Apa yang Anda lakukan?',
+      scenario: 'Kamu lihat ada tren lomba baru yang cocok banget buat diikuti teman-teman organisasimu. Apa yang kamu lakukan?',
       options: [
-        'Ignore, tidak relevant',
-        'Research dan share insights ke team/management untuk potential improvement',
-        'Keep info untuk diri sendiri',
-        'Just mention casually tanpa follow up'
+        'Biarin aja, bukan urusan kamu',
+        'Riset dikit lombanya terus share idenya ke tim biar bisa ikutan',
+        'Simpan infonya buat kamu sendiri aja',
+        'Cuma mention tipis-tipis tanpa kasih info lengkap'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'INI12',
-      scenario: 'Customer suggest improvement untuk service. Apa yang Anda lakukan?',
+      scenario: 'Teman kasih saran gimana caranya biar kegiatan kelas lebih asik. Apa yang kamu lakukan?',
       options: [
-        'Bilang "thanks" dan lupakan',
-        'Note down dan forward ke management dengan analysis',
-        'Defensive explain kenapa current way is better',
-        'Agree tapi tidak take any action'
+        'Bilang "makasih" terus lupain gitu aja',
+        'Catat sarannya dan coba usulin ke ketua kelas dengan tambahan ide kamu',
+        'Defensif dan bilang "cara sekarang sudah paling oke"',
+        'Setuju tapi nggak ngelakuin apa-apa'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'INI13',
-      scenario: 'Anda realize ada cara yang bisa speed up closing procedure. Apa yang Anda lakukan?',
+      scenario: 'Kamu sadar ada cara yang lebih gampang buat ngumpulin tugas kelompok secara online. Apa yang kamu lakukan?',
       options: [
-        'Keep untuk diri sendiri agar Anda always finish first',
-        'Share dengan team dan propose untuk SOP update',
-        'Gunakan sendiri tapi jangan share',
-        'Mention tapi tidak elaborate'
+        'Simpan caranya buat kamu sendiri biar kamu yang paling santai',
+        'Share ke teman kelompok dan ajak buat pakai cara itu biar semua terbantu',
+        'Pakai sendiri aja tapi jangan kasih tahu yang lain',
+        'Bilang "ada cara gampang sih" tapi nggak kasih tahu detailnya'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'INI14',
-      scenario: 'Social media trends berubah dan Anda notice shop content sudah outdated. Apa yang Anda lakukan?',
+      scenario: 'Konten media sosial organisasi kamu mulai ngebosenin dan ketinggalan zaman. Apa yang kamu lakukan?',
       options: [
-        'Not your problem',
-        'Compile trend analysis dan suggest content ideas ke marketing',
-        'Just think about it tapi tidak action',
-        'Complain bahwa marketing tidak update'
+        'Bukan tugas kamu, biarin divisi kreatif yang pusing',
+        'Coba cari referensi tren baru dan kasih saran ide konten ke tim',
+        'Cuma mikirin aja tapi nggak mau ngomong',
+        'Ngeluh terus kalau kontennya jelek tanpa kasih solusi'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
       id: 'INI15',
-      scenario: 'Anda attend workshop di luar dan dapat insight bagus. Apa yang Anda lakukan?',
+      scenario: 'Kamu baru aja ikut workshop desain yang oke banget. Apa yang kamu lakukan?',
       options: [
-        'Simpan knowledge untuk diri sendiri',
-        'Organize sharing session dengan team',
-        'Mention briefly tapi tidak comprehensive',
-        'Wait until ditanya baru share'
+        'Simpan ilmunya buat diri sendiri biar kamu paling jago',
+        'Bikin sesi sharing santai atau ajarin teman-teman organisasi yang butuh',
+        'Cuma pamer sertifikat aja tapi nggak mau bagi ilmu',
+        'Tunggu disuruh baru mau ngajarin'
       ],
       correctBest: 'B',
       correctWorst: 'A'
@@ -918,180 +918,180 @@ export const sjtQuestionsData = {
   accountability: [
     {
       id: 'ACC1',
-      scenario: 'Anda salah kasi order ke customer yang salah, dan customer di meja sebelah jadi ketahuan menerima order yang salah juga. Chaos. Shift leader tanya apa yang terjadi. Apa yang Anda katakan?',
+      scenario: 'Kamu salah kirim file tugas yang versinya belum kelar ke dosen, terus satu kelompok ditegur. Apa yang kamu bilang ke tim?',
       options: [
-        'Saya salah track table number, saya akan lebih careful dan system check next time',
-        'Mejanya nggak ada nomor yang jelas, susah track',
-        'Customer-nya yang nggak bilang kalo itu bukan ordernya',
-        'Ramai sih jadi saya bingung'
+        'Gue salah kirim file, sori banget. Gue bakal langsung hubungi dosen buat perbaiki',
+        'Nama filenya mirip-mirip sih, jadi gue bingung mana yang bener',
+        'Ya lagian kalian nggak kasih tahu mana file yang beneran final',
+        'Gara-gara buru-buru sih, jadi gue nggak teliti kirimnya'
       ],
       correctBest: 'A',
       correctWorst: 'C'
     },
     {
       id: 'ACC2',
-      scenario: 'Shift leader kasih feedback bahwa latte art Anda masih belum konsisten. Apa yang Anda lakukan?',
+      scenario: 'Ketua kelompok bilang kalau cara kamu jelasin materi pas presentasi masih kurang oke. Apa reaksi kamu?',
       options: [
-        'Defensive: "tapi kan customer nggak komplain"',
-        'Terima feedback, minta tips, dan commit untuk latihan lebih',
-        'Ignore feedback dan tetap dengan cara lama',
-        'Argue bahwa latte art tidak sepenting rasa'
+        'Defensif: "tapi kan tadi nggak ada yang protes"',
+        'Terima masukannya, minta saran cara yang bener, dan janji buat latihan lagi',
+        'Cuekin aja dan tetap pakai gaya lama di presentasi berikutnya',
+        'Bilang kalau cara jelasin itu nggak penting yang penting isi materinya'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'ACC3',
-      scenario: 'Anda baru 2 minggu kerja dan masih sering salah, shift leader mulai terlihat frustrated. Apa yang Anda lakukan?',
+      scenario: 'Kamu baru masuk organisasi dan masih sering salah ngerjain tugas, senior mulai kelihatan kesel. Apa yang kamu lakukan?',
       options: [
-        'Quit karena merasa tidak cocok',
-        'Proaktif minta training tambahan atau mentoring, show commitment untuk improve',
-        'Diam saja dan berharap performa akan improve sendiri',
-        'Blame kurangnya training yang proper'
+        'Keluar aja karena merasa nggak cocok dan baper',
+        'Proaktif minta bimbingan lebih atau tanya bagian mana yang salah biar bisa improve',
+        'Diem aja dan berharap lama-lama bakal bisa sendiri',
+        'Salahin kurangnya pelatihan yang dikasih sama organisasi'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'ACC4',
-      scenario: 'Customer komplain rasa kopinya tidak konsisten setiap kali order. Anda salah satu barista yang sering handle. Apa respons Anda?',
+      scenario: 'Teman-teman kelompok bilang kalau kerjaan kamu nggak konsisten, kadang bagus kadang asal-asalan. Apa respons kamu?',
       options: [
-        'Mungkin lidah customer yang berubah-ubah',
-        'Terima feedback, evaluate brewing parameter, dan commit konsistensi lebih baik',
-        'Emang begini standard-nya kok',
-        'Komplain ke barista lain juga dong, bukan saya doang'
+        'Mungkin standar kalian aja yang ketinggian',
+        'Terima keluhan mereka, evaluasi diri, dan komitmen buat lebih konsisten',
+        'Emang begini gaya kerja saya dari dulu',
+        'Ya salahin teman lain juga dong yang nggak bantuin'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
       id: 'ACC5',
-      scenario: 'Anda lupa mengerjakan closing checklist dan shift pagi complain karena harus ngerjain yang seharusnya sudah selesai. Apa yang Anda lakukan?',
+      scenario: 'Kamu lupa ngerjain bagian tugas kamu dan bikin teman lain harus kerja lembur. Apa yang kamu lakukan?',
       options: [
-        'Bilang "kemarin terlalu capek jadi lupa"',
-        'Minta maaf dengan tulus, terima responsibility, dan pastikan tidak terulang',
-        'Blame shift leader yang tidak remind',
-        'Emang nggak terlalu penting juga kan'
+        'Bilang "kemarin gue sibuk banget soalnya"',
+        'Minta maaf tulus, tanggung jawab, dan pastikan nggak bakal ngulangin lagi',
+        'Salahin teman kelompok yang nggak ngingetin kamu di grup',
+        'Anggap aja itu hal biasa dalam kerja kelompok'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'ACC6',
-      scenario: 'Anda dapat hasil evaluasi performance yang kurang memuaskan di beberapa area. Apa yang Anda lakukan?',
+      scenario: 'Hasil evaluasi kinerja kamu di organisasi kurang memuaskan. Apa yang kamu lakukan?',
       options: [
-        'Merasa down dan demotivated',
-        'Buat action plan konkret untuk improve area yang lemah, minta support jika perlu',
-        'Argue bahwa evaluasi tidak fair',
-        'Tidak peduli dan tetap kerja seperti biasa'
+        'Merasa drop dan pengen berhenti ikut kegiatan',
+        'Bikin rencana buat benerin kekurangan kamu dan minta saran dari senior',
+        'Debat kalau evaluasi itu nggak adil dan nggak objektif',
+        'Nggak peduli dan tetap kerja kayak biasanya aja'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'ACC7',
-      scenario: 'Rekan kerja junior tanya "kenapa cara kamu begini?" dengan nada ingin belajar. Apa yang Anda lakukan?',
+      scenario: 'Adik tingkat tanya "kak, kenapa cara kerjanya begini?" karena dia pengen belajar. Apa yang kamu lakukan?',
       options: [
-        'Udah gini aja, nanti juga ngerti sendiri',
-        'Explain dengan sabar reasoning dan best practice, encourage untuk tanya lebih',
-        'Kalo nggak percaya, tanya shift leader aja',
-        'Tersinggung dan merasa disrespect'
+        'Jawab "udah dari dulu begini, ikutin aja"',
+        'Jelasin alasannya dengan sabar dan kasih tahu cara terbaiknya',
+        'Kalau nggak percaya, tanya aja langsung ke ketua',
+        'Ngerasa tersinggung karena dikira cara kerja kamu salah'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'ACC8',
-      scenario: 'Anda salah schedule dan ternyata shift Anda hari ini, bukan besok. Anda telat 30 menit. Apa yang Anda lakukan?',
+      scenario: 'Kamu salah liat jadwal rapat dan telat datang 30 menit. Apa yang kamu lakukan?',
       options: [
-        'Bilang ada traffic atau alasan lain',
-        'Jujur akui salah lihat schedule, minta maaf, dan pastikan tidak terulang',
-        'Tidak kasih explanation dan langsung kerja saja',
-        'Blame sistem scheduling yang confusing'
+        'Bilang tadi kejebak macet atau ada urusan lain',
+        'Jujur kalau salah liat jadwal, minta maaf, dan langsung fokus ikut rapat',
+        'Nggak kasih penjelasan apa-apa dan langsung duduk aja',
+        'Salahin pengurus yang nggak nge-share jadwal dengan jelas'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'ACC9',
-      scenario: 'Ada new method/SOP yang introduced tapi Anda merasa cara lama lebih baik. Apa yang Anda lakukan?',
+      scenario: 'Ada metode baru buat ngerjain proyek tapi kamu ngerasa cara lama lebih enak. Apa yang kamu lakukan?',
       options: [
-        'Tetap pakai cara lama karena Anda lebih comfortable',
-        'Try new method dengan open mind, evaluate objectively, kasih feedback konstruktif jika perlu',
-        'Complain ke semua orang bahwa new method buruk',
-        'Follow new method tapi with reluctance yang obvious'
+        'Tetap pakai cara lama karena kamu lebih nyaman',
+        'Coba pakai cara baru dengan pikiran terbuka, terus kasih feedback kalau ada kendala',
+        'Ngomel ke semua teman kalau cara baru itu ribet dan nggak guna',
+        'Ikutin cara baru tapi sambil ogah-ogahan'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
       id: 'ACC10',
-      scenario: 'Customer kasih compliment ke shift leader tentang service Anda. Shift leader share ke Anda. Apa respons Anda?',
+      scenario: 'Dosen puji hasil kerja kamu di depan kelas. Apa respons kamu?',
       options: [
-        'Ya emang saya yang paling bagus di sini',
-        'Terima compliment dengan humble dan appreciate, gunakan sebagai motivasi untuk konsisten',
-        'Ah biasa aja kok, customer itu lebay',
-        'Tidak respons apa-apa karena awkward'
+        'Sombong dan ngerasa paling pinter di kelas',
+        'Terima pujian dengan rendah hati dan jadiin itu motivasi buat terus belajar',
+        'Bilang "ah itu mah hoki aja Pak"',
+        'Nggak ngerespon apa-apa karena ngerasa awkward'
       ],
       correctBest: 'B',
       correctWorst: 'A'
     },
     {
       id: 'ACC11',
-      scenario: 'Anda realize Anda yang cause inventory discrepancy. Apa yang Anda lakukan?',
+      scenario: 'Kamu sadar kalau kamu yang bikin uang kas kelompok jadi kurang. Apa yang kamu lakukan?',
       options: [
-        'Stay silent dan hope nobody finds out',
-        'Immediately report dan explain what happened',
-        'Fix it quietly tanpa inform anyone',
-        'Blame pada sistem atau orang lain'
+        'Diem aja dan berharap nggak ada yang nyadar',
+        'Langsung lapor ke bendahara, jelasin kenapa bisa kurang, dan tanggung jawab',
+        'Benerin diem-diem tanpa kasih tahu siapa-siapa',
+        'Salahin orang lain atau sistem pencatatannya'
       ],
       correctBest: 'B',
       correctWorst: 'D'
     },
     {
       id: 'ACC12',
-      scenario: 'Anda promise customer untuk follow up tapi kemudian lupa. Customer datang lagi dan tanya. Apa yang Anda lakukan?',
+      scenario: 'Kamu janji mau bantu teman ngerjain tugas tapi kamu lupa. Temanmu datang nanya progressnya. Apa yang kamu lakukan?',
       options: [
-        'Pretend you did tapi tidak ada update',
-        'Apologize genuinely, explain honestly, dan handle immediately',
-        'Blame workload atau staff lain',
-        'Say you\'ll do it now tapi still not prioritize'
+        'Pura-pura sudah dikerjain tapi filenya ketinggalan',
+        'Minta maaf jujur, jelasin kalau lupa, dan langsung kerjain saat itu juga',
+        'Salahin tugas kamu sendiri yang lagi numpuk',
+        'Bilang "iya nanti gue kerjain" tapi tetap nggak diprioritasin'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'ACC13',
-      scenario: 'Training yang Anda ikuti ternyata tidak applicable di situation real. Manager tanya how was it. Apa yang Anda lakukan?',
+      scenario: 'Pelatihan yang kamu ikutin ternyata nggak nyambung sama dunia nyata. Pengurus tanya gimana pelatihannya. Apa jawabanmu?',
       options: [
-        'Bilang bagus meskipun tidak berguna',
-        'Honest feedback dengan constructive suggestions',
-        'Komplain habis-habisan tanpa solusi',
-        'Say it was fine tapi private complain ke colleagues'
+        'Bilang bagus-bagus aja biar mereka seneng',
+        'Kasih feedback jujur tapi sopan dan kasih saran biar lebih oke kedepannya',
+        'Ngomel-ngomel kalau pelatihannya cuma buang-buang waktu',
+        'Bilang oke tapi di belakang ngeluh terus ke teman-teman'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'ACC14',
-      scenario: 'Anda given additional responsibility tapi realize you cannot handle. Apa yang Anda lakukan?',
+      scenario: 'Kamu dapet tugas tambahan dari organisasi tapi kamu sadar kamu nggak bakal sanggup handle. Apa yang kamu lakukan?',
       options: [
-        'Accept dan struggle in silence',
-        'Communicate early, discuss realistic scope atau timeline',
-        'Accept tapi deliver poor quality',
-        'Accept tapi delegate tanpa permission'
+        'Terima aja terus stres sendiri ngerjainnya',
+        'Komunikasi dari awal, jelasin kapasitas kamu, dan diskusikan pembagian tugasnya',
+        'Terima tapi nanti ngerjainnya asal-asalan',
+        'Terima tapi diam-diam kamu kasih ke orang lain buat ngerjain'
       ],
       correctBest: 'B',
       correctWorst: 'C'
     },
     {
       id: 'ACC15',
-      scenario: 'Anda notice own performance dropping tapi belum ada yang comment. Apa yang Anda lakukan?',
+      scenario: 'Kamu ngerasa nilai kamu mulai turun tapi belum ada yang negur. Apa yang kamu lakukan?',
       options: [
-        'Wait until someone notices',
-        'Proactive self-assess dan seek guidance',
-        'Hope it fixes itself',
-        'Blame external factors'
+        'Tunggu sampai ada yang negur baru mulai belajar',
+        'Evaluasi diri sendiri secara jujur dan cari cara buat perbaiki nilai',
+        'Berharap nilainya bakal naik sendiri seiring berjalannya waktu',
+        'Salahin dosen atau lingkungan yang nggak mendukung'
       ],
       correctBest: 'B',
       correctWorst: 'C'
