@@ -125,7 +125,7 @@ const SJTAssessment = () => {
           <div className="card shadow-premium intro-card text-center">
             <h1>Decision Making Test</h1>
             <p className="description text-muted">
-              Gunakan panduan operasional Stoa untuk memilih tindakan terbaik dan terburuk dalam setiap skenario.
+              Gunakan asumsimu dan kebiasaanmu untuk memilih tindakan terbaik dan terburuk dalam setiap skenario
             </p>
             <div className="instructions-box">
               <div className="ins-row"><span>✅</span> Pilih <b>Satu Tindakan Terbaik</b> (Best).</div>
