@@ -95,7 +95,7 @@ const SJTAssessment = () => {
 
     try {
       // GANTI DENGAN URL WEB APP GOOGLE SCRIPT ANDA
-      const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzidEGllgKwWDfAPvknrROkvHZ6m0NCb0snKnS4bj_WBJ6hl3Yxc2dfQH_fWraOQI2JEw/exec";
+      const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbx3Z_rRaM0qTcNdrYOPUq316wstmvPVGLwfAVWBEsd35xrvOHB133QgpeZILQaiSTYzhQ/exec";
       
       await fetch(WEB_APP_URL, {
         method: "POST",
