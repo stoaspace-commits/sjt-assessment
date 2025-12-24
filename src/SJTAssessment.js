@@ -132,6 +132,8 @@ const SJTAssessment = () => {
               <div className="ins-row"><span>❌</span> Pilih <b>Satu Tindakan Terburuk</b> (Worst).</div>
               <div className="ins-row"><span>⏳</span> Durasi pengerjaan adalah <b>90 menit</b>.</div>
             </div>
+
+{/* Tambahkan spasi pemisah di sini jika ingin via JSX, atau gunakan CSS margin di bawah */}
             <div className="name-section">
               <label className="input-label">Nama Lengkap</label>
               <input 
